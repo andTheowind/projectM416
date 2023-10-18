@@ -4,7 +4,7 @@
 
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Таргетолог для Facebook и Instagram</title>
 
     <!-- Подключаем шрифт "Grtsk Giga" -->
     <link rel="stylesheet" href="fonts/GrtskGiga.css">
@@ -17,9 +17,8 @@
 
     <!-- Подключаем либу слайдера Splide  -->
     <link rel="stylesheet" href="css/splide.css">
-    <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
 
-    <!-- Подключаем файл стилей либы AOS для анимации  -->
+    <!-- Подключаем файл стилей либы AOS для анимации   -->
     <link rel="stylesheet" href="css/aos.css">
 
     <!-- Подключаем шрифт основной файл стилей -->
@@ -342,7 +341,6 @@
     <section class="forget-problems">
         <div class="container">
             <div class="row">
-
                 <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-delay="250">
                     <div class="forget-problems-txt-info">
                         <h2>
@@ -442,13 +440,15 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-delay="250">
                     <div class="forget-problems-img pt-3">
-                        <img src="img/DSC0867-face-min.webp" class="img-fluid" alt="">
+                        <picture>
+                            <source srcset="img/DSC0867-face-min-mob.webp" media="(max-width: 479.98px)">
+                            <source srcset="img/DSC0867-face-min.webp" media="(min-width: 480px)">
+                            <img src="img/DSC0867-face-min.webp" class="img-fluid" alt="">
+                        </picture>
                     </div>
                 </div>
-
             </div>
         </div>
     </section>
@@ -1768,7 +1768,7 @@
 
 
     <!-- Скрипты -->
-    <script src="js/aos.js"></script>
+    <!-- <script src="js/aos.js"></script> -->
 
     <script src="js/aosInitial.js"></script>
 
