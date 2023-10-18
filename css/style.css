@@ -1895,9 +1895,7 @@ input:focus-visible {
     }
     .header {
         z-index: 999989;
-    }
-    .header {
-
+        overflow-x: hidden;
     }
     .mobile-phone,
     .header-burger,
