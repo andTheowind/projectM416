@@ -1,0 +1,45 @@
+
+@font-face {
+    font-family: 'Grtsk Giga';
+    src: url('GrtskGiga-Regular.eot');
+    src: local('Grtsk Giga Regular'), local('GrtskGiga-Regular'),
+        url('GrtskGiga-Regular.eot?#iefix') format('embedded-opentype'),
+        url('GrtskGiga-Regular.woff2') format('woff2'),
+        url('GrtskGiga-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grtsk Giga Medium';
+    src: url('GrtskGiga-Medium.eot');
+    src: local('Grtsk Giga Medium'), local('GrtskGiga-Medium'),
+        url('GrtskGiga-Medium.eot?#iefix') format('embedded-opentype'),
+        url('GrtskGiga-Medium.woff2') format('woff2'),
+        url('GrtskGiga-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grtsk Giga SemiBold';
+    src: url('GrtskGiga-Semibold.eot');
+    src: local('Grtsk Giga Semibold'), local('GrtskGiga-Semibold'),
+        url('GrtskGiga-Semibold.eot?#iefix') format('embedded-opentype'),
+        url('GrtskGiga-Semibold.woff2') format('woff2'),
+        url('GrtskGiga-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Grtsk Giga Bold';
+    src: url('GrtskGiga-Bold.eot');
+    src: local('Grtsk Giga Bold'), local('GrtskGiga-Bold'),
+        url('GrtskGiga-Bold.eot?#iefix') format('embedded-opentype'),
+        url('GrtskGiga-Bold.woff2') format('woff2'),
+        url('GrtskGiga-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+

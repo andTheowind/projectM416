@@ -1,0 +1,1794 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- Подключаем шрифт "Grtsk Giga" -->
+    <link rel="stylesheet" href="fonts/GrtskGiga.css">
+
+    <!-- Подключаем шрифт "GTWa lsheim Pro" -->
+    <link rel="stylesheet" href="fonts/GTWalsheimPro.css">
+
+    <!-- Подключаем шрифт сетку bootstrap 5.0.2 -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- Подключаем либу слайдера Splide  -->
+    <link rel="stylesheet" href="css/splide.css">
+    <!-- <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet"> -->
+
+    <!-- Подключаем файл стилей либы AOS для анимации  -->
+    <link rel="stylesheet" href="css/aos.css">
+
+    <!-- Подключаем шрифт основной файл стилей -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-6 col-sm-4 col-md-2 d-inline-block header-logo-col">
+                    <div class="header-logo-wrap">
+                        <a href="#" class="header-logo">#shvedovsmm</a>
+                    </div>
+                </div>
+                <div class="col-1 col-lg-8">
+                    <nav class="header-menu">
+                        <ul class="top-menu-list top-menu">
+                            <li class="top-menu-item">
+                                <a href="#about">Обо мне</a>
+                            </li>
+                            <li class="top-menu-item">
+                                <a href="#cases">Кейсы и отзывы</a>
+                            </li>
+                            <li class="top-menu-item">
+                                <a href="#interview">Интервью</a>
+                            </li>
+                            <li class="top-menu-item">
+                                <a href="#tariff">Тарифы</a>
+                            </li>
+                            <li class="top-menu-item">
+                                <a href="#contact">Контакты</a>
+                            </li>
+                        </ul>
+                        <div class="soc-network-mob d-lg-none">
+                            <div class="soc-networks">
+                                <div class="top-calc-btn-wrap w-100 pb-4 mb-2">
+                                    <a href="#budget" class="top-calc-btn default-btn w-100">Расчет бюджета</a>
+                                </div>
+                                <div class="soc-icons pt-2">
+                                    <div class="soc-icon-wrap">
+                                        <a href="https://instagram.com/smmshvedov?igshid=MzRlODBiNWFlZA==">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" viewBox="0 0 48 48" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 6C19.1112 6 18.4992 6.0204 16.5792 6.108C14.6628 6.1956 13.3536 6.5004 12.2088 6.9456C11.0088 7.3968 9.9204 8.1048 9.0204 9.0216C8.10507 9.92056 7.39663 11.0082 6.9444 12.2088C6.5016 13.3536 6.1956 14.664 6.108 16.5804C6.0216 18.4992 6 19.11 6 24C6 28.89 6.0204 29.5008 6.108 31.4208C6.1956 33.3372 6.5004 34.6464 6.9456 35.7912C7.3968 36.9912 8.1048 38.0796 9.0216 38.9796C9.92058 39.8949 11.0082 40.6033 12.2088 41.0556C13.3536 41.4996 14.6628 41.8044 16.5792 41.892C18.4992 41.9796 19.1112 42 24 42C28.8888 42 29.5008 41.9796 31.4208 41.892C33.3372 41.8044 34.6464 41.4996 35.7912 41.0544C36.9912 40.6032 38.0796 39.8952 38.9796 38.9784C39.8949 38.0794 40.6034 36.9918 41.0556 35.7912C41.4996 34.6464 41.8044 33.3372 41.892 31.4208C41.9796 29.5008 42 28.8888 42 24C42 19.1112 41.9796 18.4992 41.892 16.5792C41.8044 14.6628 41.4996 13.3536 41.0544 12.2088C40.6025 11.0077 39.894 9.91959 38.9784 9.0204C38.0794 8.10507 36.9918 7.39663 35.7912 6.9444C34.6464 6.5016 33.336 6.1956 31.4196 6.108C29.5008 6.0216 28.89 6 24 6ZM24 9.2436C28.806 9.2436 29.376 9.2616 31.2744 9.348C33.0288 9.4284 33.9816 9.72 34.6164 9.9684C35.4564 10.2936 36.0564 10.6848 36.6864 11.3136C37.3164 11.9436 37.7064 12.5436 38.0316 13.3836C38.2788 14.0184 38.5716 14.9712 38.652 16.7256C38.7384 18.624 38.7564 19.194 38.7564 24C38.7564 28.806 38.7384 29.376 38.652 31.2744C38.5716 33.0288 38.28 33.9816 38.0316 34.6164C37.7435 35.3983 37.2839 36.1056 36.6864 36.6864C36.1057 37.284 35.3983 37.7437 34.6164 38.0316C33.9816 38.2788 33.0288 38.5716 31.2744 38.652C29.376 38.7384 28.8072 38.7564 24 38.7564C19.1928 38.7564 18.624 38.7384 16.7256 38.652C14.9712 38.5716 14.0184 38.28 13.3836 38.0316C12.6017 37.7435 11.8944 37.2839 11.3136 36.6864C10.7162 36.1055 10.2566 35.3982 9.9684 34.6164C9.7212 33.9816 9.4284 33.0288 9.348 31.2744C9.2616 29.376 9.2436 28.806 9.2436 24C9.2436 19.194 9.2616 18.624 9.348 16.7256C9.4284 14.9712 9.72 14.0184 9.9684 13.3836C10.2936 12.5436 10.6848 11.9436 11.3136 11.3136C11.8943 10.7161 12.6017 10.2564 13.3836 9.9684C14.0184 9.7212 14.9712 9.4284 16.7256 9.348C18.624 9.2616 19.194 9.2436 24 9.2436Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M24 30.006C23.2113 30.006 22.4303 29.8507 21.7016 29.5488C20.973 29.247 20.3109 28.8046 19.7532 28.2469C19.1955 27.6892 18.7531 27.0271 18.4512 26.2984C18.1494 25.5697 17.994 24.7887 17.994 24C17.994 23.2113 18.1494 22.4303 18.4512 21.7016C18.7531 20.9729 19.1955 20.3108 19.7532 19.7531C20.3109 19.1954 20.973 18.753 21.7016 18.4512C22.4303 18.1494 23.2113 17.994 24 17.994C25.5929 17.994 27.1206 18.6268 28.2469 19.7531C29.3733 20.8795 30.006 22.4071 30.006 24C30.006 25.5929 29.3733 27.1205 28.2469 28.2469C27.1206 29.3732 25.5929 30.006 24 30.006ZM24 14.748C21.5463 14.748 19.193 15.7228 17.4579 17.4579C15.7228 19.1929 14.748 21.5462 14.748 24C14.748 26.4538 15.7228 28.8071 17.4579 30.5422C19.193 32.2772 21.5463 33.252 24 33.252C26.4538 33.252 28.8071 32.2772 30.5422 30.5422C32.2773 28.8071 33.252 26.4538 33.252 24C33.252 21.5462 32.2773 19.1929 30.5422 17.4579C28.8071 15.7228 26.4538 14.748 24 14.748ZM35.9436 14.58C35.9436 15.16 35.7132 15.7163 35.3031 16.1264C34.8929 16.5366 34.3367 16.767 33.7566 16.767C33.1766 16.767 32.6203 16.5366 32.2102 16.1264C31.8001 15.7163 31.5696 15.16 31.5696 14.58C31.5696 14 31.8001 13.4437 32.2102 13.0336C32.6203 12.6234 33.1766 12.393 33.7566 12.393C34.3367 12.393 34.8929 12.6234 35.3031 13.0336C35.7132 13.4437 35.9436 14 35.9436 14.58Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="soc-icon-wrap">
+                                        <a href="https://t.me/smmshvedov">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" viewBox="0 0 48 48" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24ZM24.7167 18.7649C22.7714 19.574 18.8835 21.2487 13.0531 23.7889C12.1064 24.1654 11.6104 24.5337 11.5652 24.8939C11.4889 25.5025 12.2512 25.7422 13.2891 26.0686C13.4303 26.113 13.5766 26.159 13.7265 26.2077C14.7477 26.5397 16.1213 26.928 16.8354 26.9434C17.4832 26.9574 18.2062 26.6904 19.0044 26.1423C24.4519 22.465 27.2639 20.6064 27.4405 20.5663C27.565 20.538 27.7376 20.5025 27.8546 20.6064C27.9715 20.7104 27.96 20.9072 27.9476 20.96C27.8721 21.2819 24.8802 24.0635 23.3318 25.503C22.8491 25.9517 22.5068 26.2701 22.4368 26.3428C22.28 26.5056 22.1202 26.6597 21.9666 26.8077C21.0179 27.7222 20.3065 28.4081 22.006 29.528C22.8227 30.0662 23.4762 30.5113 24.1282 30.9553C24.8402 31.4402 25.5504 31.9238 26.4693 32.5261C26.7034 32.6796 26.927 32.839 27.1448 32.9942C27.9734 33.585 28.7179 34.1157 29.6376 34.0311C30.172 33.9819 30.7241 33.4794 31.0044 31.9806C31.667 28.4386 32.9693 20.7641 33.2703 17.6016C33.2967 17.3246 33.2635 16.97 33.2369 16.8143C33.2102 16.6586 33.1546 16.4369 32.9522 16.2727C32.7126 16.0782 32.3427 16.0372 32.1772 16.0402C31.425 16.0534 30.2709 16.4547 24.7167 18.7649Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="soc-icon-wrap">
+                                        <a href="https://www.youtube.com/channel/UCVnht6CUJ41q6-OaOrCgudg">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" viewBox="0 0 48 48" fill="none">
+                                                <path fill-rule="evenodd" clip-rule="evenodd" d="M39.5841 10.8294C41.3042 11.2915 42.665 12.6523 43.1271 14.3724C43.9743 17.5046 44 24.0001 44 24.0001C44 24.0001 44 30.5213 43.1528 33.6279C42.6906 35.348 41.3299 36.7087 39.6098 37.1709C36.5032 38.0181 24 38.0181 24 38.0181C24 38.0181 11.4968 38.0181 8.39025 37.1709C6.67009 36.7087 5.30937 35.348 4.84724 33.6279C4 30.4957 4 24.0001 4 24.0001C4 24.0001 4 17.5046 4.82157 14.3981C5.2837 12.6779 6.64442 11.3172 8.36457 10.8551C11.4711 10.0078 23.9743 9.98218 23.9743 9.98218C23.9743 9.98218 36.4775 9.98218 39.5841 10.8294ZM30.3671 24.0002L19.9949 30.0079V17.9925L30.3671 24.0002Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                    <div class="soc-icon-wrap">
+                                        <a href="https://www.tiktok.com/@smmshvedov?_t=8gL993ZJ6av">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" viewBox="0 0 48 48" fill="none">
+                                                <path d="M36.2308 12.0179C34.0762 10.613 32.521 8.36524 32.0359 5.74493C31.9311 5.17879 31.8735 4.59614 31.8735 4H24.9967L24.9857 31.5599C24.8701 34.6461 22.33 37.1232 19.2161 37.1232C18.2483 37.1232 17.337 36.8812 16.5346 36.459C14.6946 35.4907 13.4354 33.562 13.4354 31.3426C13.4354 28.155 16.0287 25.5617 19.2161 25.5617C19.8111 25.5617 20.3818 25.6598 20.9217 25.829V18.8085C20.363 18.7324 19.7953 18.6848 19.2161 18.6848C12.2366 18.6848 6.55859 24.3631 6.55859 31.3426C6.55859 35.6248 8.6981 39.4144 11.9622 41.7059C14.0181 43.1493 16.519 44 19.2161 44C26.1955 44 31.8735 38.3221 31.8735 31.3426V17.3673C34.5707 19.3032 37.8752 20.444 41.4409 20.444V13.5672C39.5202 13.5672 37.7312 12.9962 36.2308 12.0179Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                </div>
+                <div class="d-none d-lg-block col-2 text-end">
+                    <div class="top-calc-btn-wrap">
+                        <a href="#budget" class="top-calc-btn default-btn">Расчет бюджета</a>
+                    </div>
+                </div>
+                <div class="col-auto header-burger-wrap">
+                    <div class="header-burger">
+                        <span></span>
+                    </div>
+                </div>
+            
+            </div>
+        </div>
+    </header>
+
+    <section class="top-section">
+        <div class="container-fluid px-0"> 
+            <div class="container">
+                <div class="row align-items-center">
+
+                    <div class="col-12 col-md-6 col-lg-7" data-aos="fade-right" data-aos-delay="450">
+                        <div class="top-section-txt-info">
+                            <p class="top-section-txt">
+                                <span>бесплатно</span> привожу первых клиентов
+                            </p>
+                            <h1>
+                                Таргет в Facebook 
+                                и Instagram 
+                                <span class="title-phrase">
+                                    для <span class="yellowish">beauty-сферы</span>
+                                </span>
+                            </h1>
+                            <p class="top-section-txt-for-cta">
+                                Оставляйте заявку и гарантированно получите 
+                                бесплатный пробный период на 3 дня.
+                            </p>
+                            <div class="cta-btn-wrap">
+                                <a href="#tariff" class="cta-btn default-black-btn">
+                                    <span>Получить</span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-5 mb-5 mb-md-0" data-aos="fade-left" data-aos-delay="450">
+                        <div class="top-section-img-wrap">
+                            <div class="three-squara">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="183" height="50" viewBox="0 0 183 50" fill="none">
+                                    <path d="M1 1.28569V49.5H181L132.786 1.28569H1Z" fill="#0A0A0A" stroke="#B8FF20" stroke-opacity="0.4"/>
+                                    <rect x="13.8574" y="13.6837" width="18.3673" height="18.3673" fill="#B8FF20" fill-opacity="0.5"/>
+                                    <rect x="41.4082" y="13.6837" width="18.3673" height="18.3673" fill="#B8FF20" fill-opacity="0.5"/>
+                                    <rect x="68.959" y="13.6836" width="18.3673" height="18.3673" fill="#B8FF20" fill-opacity="0.5"/>
+                                </svg>
+                            </div>
+                            <div class="top-section-img green-border">
+                                <picture>
+                                    <source srcset="img/DSC08656mnin.png" media="(max-width: 767.98px)">
+                                    <source srcset="img/DSC0865.png" media="(min-width: 768px)">
+                                    <img src="img/DSC0865.png" class="img-fluid">
+                                </picture>
+                                <div class="top-img-line">
+                                    <span>#shvedovsmm</span>
+                                </div>
+                                <div class="top-img-box-wrap">
+                                    <div class="bottom-img-box">   
+                                        <span>мои каналы:</span>
+                                        <div class="img-box-icons">
+                                            <ul>
+                                                <li>
+                                                    <a href="https://instagram.com/smmshvedov?igshid=MzRlODBiNWFlZA==" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 6C19.1112 6 18.4992 6.0204 16.5792 6.108C14.6628 6.1956 13.3536 6.5004 12.2088 6.9456C11.0088 7.3968 9.9204 8.1048 9.0204 9.0216C8.10507 9.92056 7.39663 11.0082 6.9444 12.2088C6.5016 13.3536 6.1956 14.664 6.108 16.5804C6.0216 18.4992 6 19.11 6 24C6 28.89 6.0204 29.5008 6.108 31.4208C6.1956 33.3372 6.5004 34.6464 6.9456 35.7912C7.3968 36.9912 8.1048 38.0796 9.0216 38.9796C9.92058 39.8949 11.0082 40.6033 12.2088 41.0556C13.3536 41.4996 14.6628 41.8044 16.5792 41.892C18.4992 41.9796 19.1112 42 24 42C28.8888 42 29.5008 41.9796 31.4208 41.892C33.3372 41.8044 34.6464 41.4996 35.7912 41.0544C36.9912 40.6032 38.0796 39.8952 38.9796 38.9784C39.8949 38.0794 40.6034 36.9918 41.0556 35.7912C41.4996 34.6464 41.8044 33.3372 41.892 31.4208C41.9796 29.5008 42 28.8888 42 24C42 19.1112 41.9796 18.4992 41.892 16.5792C41.8044 14.6628 41.4996 13.3536 41.0544 12.2088C40.6025 11.0077 39.894 9.91959 38.9784 9.0204C38.0794 8.10507 36.9918 7.39663 35.7912 6.9444C34.6464 6.5016 33.336 6.1956 31.4196 6.108C29.5008 6.0216 28.89 6 24 6ZM24 9.2436C28.806 9.2436 29.376 9.2616 31.2744 9.348C33.0288 9.4284 33.9816 9.72 34.6164 9.9684C35.4564 10.2936 36.0564 10.6848 36.6864 11.3136C37.3164 11.9436 37.7064 12.5436 38.0316 13.3836C38.2788 14.0184 38.5716 14.9712 38.652 16.7256C38.7384 18.624 38.7564 19.194 38.7564 24C38.7564 28.806 38.7384 29.376 38.652 31.2744C38.5716 33.0288 38.28 33.9816 38.0316 34.6164C37.7435 35.3983 37.2839 36.1056 36.6864 36.6864C36.1057 37.284 35.3983 37.7437 34.6164 38.0316C33.9816 38.2788 33.0288 38.5716 31.2744 38.652C29.376 38.7384 28.8072 38.7564 24 38.7564C19.1928 38.7564 18.624 38.7384 16.7256 38.652C14.9712 38.5716 14.0184 38.28 13.3836 38.0316C12.6017 37.7435 11.8944 37.2839 11.3136 36.6864C10.7162 36.1055 10.2566 35.3982 9.9684 34.6164C9.7212 33.9816 9.4284 33.0288 9.348 31.2744C9.2616 29.376 9.2436 28.806 9.2436 24C9.2436 19.194 9.2616 18.624 9.348 16.7256C9.4284 14.9712 9.72 14.0184 9.9684 13.3836C10.2936 12.5436 10.6848 11.9436 11.3136 11.3136C11.8943 10.7161 12.6017 10.2564 13.3836 9.9684C14.0184 9.7212 14.9712 9.4284 16.7256 9.348C18.624 9.2616 19.194 9.2436 24 9.2436Z" fill="#F1FFD2" fill-opacity="0.4"/>
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 30.006C23.2113 30.006 22.4303 29.8507 21.7016 29.5488C20.973 29.247 20.3109 28.8046 19.7532 28.2469C19.1955 27.6892 18.7531 27.0271 18.4512 26.2984C18.1494 25.5697 17.994 24.7887 17.994 24C17.994 23.2113 18.1494 22.4303 18.4512 21.7016C18.7531 20.9729 19.1955 20.3108 19.7532 19.7531C20.3109 19.1954 20.973 18.753 21.7016 18.4512C22.4303 18.1494 23.2113 17.994 24 17.994C25.5929 17.994 27.1206 18.6268 28.2469 19.7531C29.3733 20.8795 30.006 22.4071 30.006 24C30.006 25.5929 29.3733 27.1205 28.2469 28.2469C27.1206 29.3732 25.5929 30.006 24 30.006ZM24 14.748C21.5463 14.748 19.193 15.7228 17.4579 17.4579C15.7228 19.1929 14.748 21.5462 14.748 24C14.748 26.4538 15.7228 28.8071 17.4579 30.5422C19.193 32.2772 21.5463 33.252 24 33.252C26.4538 33.252 28.8071 32.2772 30.5422 30.5422C32.2773 28.8071 33.252 26.4538 33.252 24C33.252 21.5462 32.2773 19.1929 30.5422 17.4579C28.8071 15.7228 26.4538 14.748 24 14.748ZM35.9436 14.58C35.9436 15.16 35.7132 15.7163 35.3031 16.1264C34.8929 16.5366 34.3367 16.767 33.7566 16.767C33.1766 16.767 32.6203 16.5366 32.2102 16.1264C31.8001 15.7163 31.5696 15.16 31.5696 14.58C31.5696 14 31.8001 13.4437 32.2102 13.0336C32.6203 12.6234 33.1766 12.393 33.7566 12.393C34.3367 12.393 34.8929 12.6234 35.3031 13.0336C35.7132 13.4437 35.9436 14 35.9436 14.58Z" fill="#F1FFD2" fill-opacity="0.4"/>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://t.me/smmshvedov" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24ZM24.7167 18.7649C22.7714 19.574 18.8835 21.2487 13.0531 23.7889C12.1064 24.1654 11.6104 24.5337 11.5652 24.8939C11.4889 25.5025 12.2512 25.7422 13.2891 26.0686C13.4303 26.113 13.5766 26.159 13.7265 26.2077C14.7477 26.5397 16.1213 26.928 16.8354 26.9434C17.4832 26.9574 18.2062 26.6904 19.0044 26.1423C24.4519 22.465 27.2639 20.6064 27.4405 20.5663C27.565 20.538 27.7376 20.5025 27.8546 20.6064C27.9715 20.7104 27.96 20.9072 27.9476 20.96C27.8721 21.2819 24.8802 24.0635 23.3318 25.503C22.8491 25.9517 22.5068 26.2701 22.4368 26.3428C22.28 26.5056 22.1202 26.6597 21.9666 26.8077C21.0179 27.7222 20.3065 28.4081 22.006 29.528C22.8227 30.0662 23.4762 30.5113 24.1282 30.9553C24.8402 31.4402 25.5504 31.9238 26.4693 32.5261C26.7034 32.6796 26.927 32.839 27.1448 32.9942C27.9734 33.585 28.7179 34.1157 29.6376 34.0311C30.172 33.9819 30.7241 33.4794 31.0044 31.9806C31.667 28.4386 32.9693 20.7641 33.2703 17.6016C33.2967 17.3246 33.2635 16.97 33.2369 16.8143C33.2102 16.6586 33.1546 16.4369 32.9522 16.2727C32.7126 16.0782 32.3427 16.0372 32.1772 16.0402C31.425 16.0534 30.2709 16.4547 24.7167 18.7649Z" fill="#F1FFD2" fill-opacity="0.4"/>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.youtube.com/channel/UCVnht6CUJ41q6-OaOrCgudg" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.5841 10.8294C41.3042 11.2915 42.665 12.6523 43.1271 14.3724C43.9743 17.5046 44 24.0001 44 24.0001C44 24.0001 44 30.5213 43.1528 33.6279C42.6906 35.348 41.3299 36.7087 39.6098 37.1709C36.5032 38.0181 24 38.0181 24 38.0181C24 38.0181 11.4968 38.0181 8.39025 37.1709C6.67009 36.7087 5.30937 35.348 4.84724 33.6279C4 30.4957 4 24.0001 4 24.0001C4 24.0001 4 17.5046 4.82157 14.3981C5.2837 12.6779 6.64442 11.3172 8.36457 10.8551C11.4711 10.0078 23.9743 9.98218 23.9743 9.98218C23.9743 9.98218 36.4775 9.98218 39.5841 10.8294ZM30.3671 24.0002L19.9949 30.0079V17.9925L30.3671 24.0002Z" fill="#F1FFD2" fill-opacity="0.4"/>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.tiktok.com/@smmshvedov?_t=8gL993ZJ6av" target="_blank">
+                                                        <svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                                            <path d="M36.2308 12.0179C34.0762 10.613 32.521 8.36524 32.0359 5.74493C31.9311 5.17879 31.8735 4.59614 31.8735 4H24.9967L24.9857 31.5599C24.8701 34.6461 22.33 37.1232 19.2161 37.1232C18.2483 37.1232 17.337 36.8812 16.5346 36.459C14.6946 35.4907 13.4354 33.562 13.4354 31.3426C13.4354 28.155 16.0287 25.5617 19.2161 25.5617C19.8111 25.5617 20.3818 25.6598 20.9217 25.829V18.8085C20.363 18.7324 19.7953 18.6848 19.2161 18.6848C12.2366 18.6848 6.55859 24.3631 6.55859 31.3426C6.55859 35.6248 8.6981 39.4144 11.9622 41.7059C14.0181 43.1493 16.519 44 19.2161 44C26.1955 44 31.8735 38.3221 31.8735 31.3426V17.3673C34.5707 19.3032 37.8752 20.444 41.4409 20.444V13.5672C39.5202 13.5672 37.7312 12.9962 36.2308 12.0179Z" fill="#F1FFD2" fill-opacity="0.4"/>
+                                                        </svg>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about-me" id="about">
+        <div class="container h-100">
+            <div class="row h-100 flex-column-reverse flex-md-row align-items-center">
+
+                <div class="col-12 col-md-5 col-lg-5 mt-4 mt-md-0" data-aos="fade-down" data-aos-delay="400">    
+                    <div class="about-me-img-wrap">
+                        <div class="about-me-img-container">
+                            <img src="img/DSC08732.png" class="img-fluid" alt=""> 
+                            <div class="about-me-img-box pt-4 pb-4">
+                                <p class="text-center">4+ лет опыта</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-7 col-lg-7 mb-5 mb-md-0 pb-3 pb-md-0" data-aos="fade-left" data-aos-delay="600">
+                    <div class="about-me-info-wrap ms-xl-4">
+                        <div class="about-me-info-txt edges-green py-4 py-lg-5 px-3 px-sm-4 px-lg-5">
+                            <h2 class="pb-2 mb-1">Обо мне</h2>
+                            <h5 class="pb-4 mb-0">
+                                Роман Шведов, таргетолог в beauty-сфере в Facebook и Instagram.
+                            </h5>
+                            <p>
+                                Все мои компетенции наработаны годами практики. Знаю, что работает, 
+                                а что нет: лично проверял каждую стратегию, а не осваивал готовый курс.
+                            </p>
+                            <p>
+                                Почему только beauty? Узкая специализация позволяет добиваться больших результатов.
+                                В отличии от специалистов общего профиля, которые не понимают специфику сферы 
+                                и ее продвижения.
+                            </p>
+                            <p class="pb-2">
+                                Команда на подряде. Работу по подготовке мини-лендинга, макетов, текстов и лид-форм 
+                                для рекламы выполняют компетентные специалисты. Это существенно ускоряет сроки — 
+                                первый запуск уже через 24 часа.
+                            </p>
+                            <div class="about-me-btn-wrap">
+                                <a href="#tariff" class="about-me-btn default-black-btn mt-4">Получить</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="know-problems">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 mb-4">
+                    <h2 class="text-start text-md-center">
+                        Знаю проблемы, <span class="nowrap-sm">с которыми</span> 
+                        сталкиваются beauty-мастера
+                    </h2>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4" data-aos="fade-right" data-aos-delay="350">
+                    <div class="problems-card">
+                        <div class="problems-card-title">
+                            <h4>Реклама не приносит желаемых результатов</h4>
+                        </div>
+                        <div class="problems-card-body">
+                            <p class="text-center">
+                                Результатов приходится ждать неделями, 
+                                <span class="nowrap">а стоимость привлечения</span> растет с каждым днем.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-5 col-lg-4" data-aos="fade-left" data-aos-delay="350">
+                    <div class="problems-card">
+                        <div class="problems-card-title">
+                            <h4>Нестабильный <b class="nowrap">поток клиентов</b></h4>
+                        </div>
+                        <div class="problems-card-body">
+                            <p class="text-center">
+                                Хотите расширять свою базу клиентов, но новых заявок поступает очень мало.
+                            </p>
+                        </div>
+                    </div>
+                </div>  
+
+                <div class="col-auto col-md-12 col-lg-8 offset-lg-2 know-problems-img-col" data-aos="fade-down" data-aos-delay="600"  style="text-align: center;">
+                    <div class="know-problems-img-contain">
+                        <div class="know-problems-img">
+                            <img src="img/DSC088661problem.png" class="img-fluid" alt="">
+                            <div class="blur-txt">
+                                <span>или</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-2"></div>
+
+                <div class="col-12 col-md-4 col-lg-4" data-aos="fade-right" data-aos-delay="350">
+                    <div class="problems-card inverted-borders">
+                        <div class="problems-card-title">
+                            <h4>Поток клиентов перестал расти</h4>
+                        </div>
+                        <div class="problems-card-body">
+                            <p class="text-center">
+                                Хотите расширять свою базу клиентов, но новых заявок поступает очень мало.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4"  data-aos="fade-up" data-aos-delay="300">
+                    <div class="problems-card inverted-borders">
+                        <div class="problems-card-title">
+                            <h4>Эмоциональное выгорание</h4>
+                        </div>
+                        <div class="problems-card-body">
+                            <p class="text-center">
+                                Пропадает понимание дальнейших действий наряду со спадом доверия к таргетологам.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-4 col-lg-4" data-aos="fade-left" data-aos-delay="350">
+                    <div class="problems-card inverted-borders">
+                        <div class="problems-card-title">
+                            <h4>Таргетолог слил бюджет</h4>
+                        </div>
+                        <div class="problems-card-body">
+                            <p class="text-center">
+                                Потрачен весь бюджет, оплачены услуги “специалиста”, но результатов ноль — ушли в минус.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="forget-problems">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-12 col-lg-6" data-aos="fade-right" data-aos-delay="250">
+                    <div class="forget-problems-txt-info">
+                        <h2>
+                            Забудьте все 
+                            эти проблемы 
+                            <span class="title-phrase yellowish">вместе со мной</span>
+                        </h2>
+                        <div class="row forget-cards-row">
+                            <div class="col-12 col-md-6 col-md-6 mb-md-4 pb-2">
+                                <div class="forget-card">
+                                    <div class="forget-card-title">
+                                        <span>Результат через 24 часа</span>
+                                    </div>
+                                    <div class="forget-card-body">
+                                        <p>
+                                            После запуска рекламы первые заявки придут уже в течение 24 часов.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 col-md-6 mb-md-4 pb-2">
+                                <div class="forget-card">
+                                    <div class="forget-card-title">
+                                        <span>Бесплатный период</span>
+                                    </div>
+                                    <div class="forget-card-body">
+                                        <p>
+                                            Бесплатно привожу первых клиентов, 
+                                            <span class="nowrap">так как</span> уверен в том, <br>
+                                            что могу дать результат.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-md-4 pb-2">
+                                <div class="forget-card">
+                                    <div class="forget-card-title">
+                                        <span>Точное попадание</span>
+                                    </div>
+                                    <div class="forget-card-body">
+                                        <p>
+                                            Привожу именно целевых клиентов, 
+                                            <span class="nowrap">а не заявки-пустышки</span>, 
+                                            которые максимум подпишутся на блог.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-md-4 pb-2">
+                                <div class="forget-card">
+                                    <div class="forget-card-title">
+                                        <span>Специализация</span>
+                                    </div>
+                                    <div class="forget-card-body">
+                                        <p>
+                                            Работаю только с beauty-сферой, 
+                                            <span class="nowrap">изучил все</span> 
+                                            “подводные камни” ее продвижения, 
+                                            выявив их на практике путем проб и ошибок.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-12 col-md-6 mb-md-4 pb-2">
+                                <div class="forget-card">
+                                    <div class="forget-card-title">
+                                        <span>Ищу компромиссы</span>
+                                    </div>
+                                    <div class="forget-card-body">
+                                        <p>
+                                            Ориентирован на комфортное 
+                                            <span class="nowrap">и эффективное</span> сотрудничество. 
+                                            Гибко подхожу к условиям. 
+                                            Работа со мной — это выгода, в первую очередь.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6 mb-md-4 pb-2">
+                                <div class="forget-card">
+                                    <div class="forget-card-title">
+                                        <span>Все под отчетность</span>
+                                    </div>
+                                    <div class="forget-card-body">
+                                        <p>
+                                            Вы регулярно получаете отчеты,
+                                            <span class="nowrap">в которых</span> 
+                                            подсчитаны все расходы 
+                                            <span class="nowrap">и результаты,</span> 
+                                            а также показатели промежуточной конверсии.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-delay="250">
+                    <div class="forget-problems-img pt-3">
+                        <img src="img/DSC0867-face.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="honest-cases" id="cases">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-3">Самые <span class="nowrap-sm"><b class="yellowish">честные</b> кейсы</span></h2>
+                    <p class="mb-4">Все кейсы подтверждены ссылкой на аккаунт и видео-отзывом</p>
+                </div>
+                <div class="col-12">
+                    <div class="splide pt-2 pt-lg-5" id="splide">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-5 col-xl-4">
+                                            <div class="slide-img-wrap h-100">
+                                                <div class="slide-img-stopper green-right-border h-100">
+                                                    <div class="slide-stopper-btn-wrap">
+                                                        <a href="#" class="slide-stopper-btn pulse">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-7 col-xl-8">
+                                            <div class="slide-info-wrap green-border">
+                                                <div class="client">
+                                                    <div class="client-info">
+                                                        <b>Клиент:</b> 
+                                                        Екатерина, мастер перманентного макияжа в Валенсии
+                                                    </div>
+                                                    <div class="client-inst">
+                                                        <a href="#">
+                                                            <img src="img/instagram-green.svg"  alt="">
+                                                            <span>@katiaslavnaya</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="task">
+                                                    <b>Задача: </b>
+                                                    <span>привести 20 клиентов за месяц</span>
+                                                </div>
+                                                <div class="budget">
+                                                    <b>бюджет:</b>
+                                                    <span>200 $</span>
+                                                </div>
+                                                <div class="applications-received">
+                                                    <b>привлечено заявок: </b>
+                                                    <span>79</span>
+                                                </div>
+                                                <div class="sales-received">
+                                                    <b>получено продаж: </b>
+                                                    <span>63</span>
+                                                </div>
+
+                                                <div class="application-purpose">
+                                                    <b>Цена заявки: </b>
+                                                    <span>2$/шт.</span>
+                                                </div>
+                                                <div class="total-profit">
+                                                    <b>прибыль: </b>
+                                                    <span>6200 $</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-5 col-xl-4">
+                                            <div class="slide-img-wrap h-100">
+                                                <div class="slide-img-stopper green-right-border h-100">
+                                                    <div class="slide-stopper-btn-wrap">
+                                                        <a href="#" class="slide-stopper-btn pulse">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-7 col-xl-8">
+                                            <div class="slide-info-wrap green-border">
+                                                <div class="client">
+                                                    <div class="client-info">
+                                                        <b>Клиент:</b> 
+                                                        Екатерина, мастер перманентного макияжа в Валенсии
+                                                    </div>
+                                                    <div class="client-inst">
+                                                        <a href="#">
+                                                            <img src="img/instagram-green.svg" alt="">
+                                                            <span>@katiaslavnaya</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="task">
+                                                    <b>Задача: </b>
+                                                    <span>привести 20 клиентов за месяц</span>
+                                                </div>
+                                                <div class="budget">
+                                                    <b>бюджет:</b>
+                                                    <span>200 $</span>
+                                                </div>
+                                                <div class="applications-received">
+                                                    <b>привлечено заявок: </b>
+                                                    <span>79</span>
+                                                </div>
+                                                <div class="sales-received">
+                                                    <b>получено продаж: </b>
+                                                    <span>63</span>
+                                                </div>
+
+                                                <div class="application-purpose">
+                                                    <b>Цена заявки: </b>
+                                                    <span>2$/шт.</span>
+                                                </div>
+                                                <div class="total-profit">
+                                                    <b>прибыль: </b>
+                                                    <span>6200 $</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-5 col-xl-4">
+                                            <div class="slide-img-wrap h-100">
+                                                <div class="slide-img-stopper green-right-border h-100">
+                                                    <div class="slide-stopper-btn-wrap">
+                                                        <a href="#" class="slide-stopper-btn pulse">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-7 col-xl-8">
+                                            <div class="slide-info-wrap green-border">
+                                                <div class="client">
+                                                    <div class="client-info">
+                                                        <b>Клиент:</b> 
+                                                        Екатерина, мастер перманентного макияжа в Валенсии
+                                                    </div>
+                                                    <div class="client-inst">
+                                                        <a href="#">
+                                                            <img src="img/instagram-green.svg" alt="">
+                                                            <span>@katiaslavnaya</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="task">
+                                                    <b>Задача: </b>
+                                                    <span>привести 20 клиентов за месяц</span>
+                                                </div>
+                                                <div class="budget">
+                                                    <b>бюджет:</b>
+                                                    <span>200 $</span>
+                                                </div>
+                                                <div class="applications-received">
+                                                    <b>привлечено заявок: </b>
+                                                    <span>79</span>
+                                                </div>
+                                                <div class="sales-received">
+                                                    <b>получено продаж: </b>
+                                                    <span>63</span>
+                                                </div>
+
+                                                <div class="application-purpose">
+                                                    <b>Цена заявки: </b>
+                                                    <span>2$/шт.</span>
+                                                </div>
+                                                <div class="total-profit">
+                                                    <b>прибыль: </b>
+                                                    <span>6200 $</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-5 col-xl-4">
+                                            <div class="slide-img-wrap h-100">
+                                                <div class="slide-img-stopper green-right-border h-100">
+                                                    <div class="slide-stopper-btn-wrap">
+                                                        <a href="#" class="slide-stopper-btn pulse">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-7 col-xl-8">
+                                            <div class="slide-info-wrap green-border">
+                                                <div class="client">
+                                                    <div class="client-info">
+                                                        <b>Клиент:</b> 
+                                                        Екатерина, мастер перманентного макияжа в Валенсии
+                                                    </div>
+                                                    <div class="client-inst">
+                                                        <a href="#">
+                                                            <img src="img/instagram-green.svg" alt="">
+                                                            <span>@katiaslavnaya</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="task">
+                                                    <b>Задача: </b>
+                                                    <span>привести 20 клиентов за месяц</span>
+                                                </div>
+                                                <div class="budget">
+                                                    <b>бюджет:</b>
+                                                    <span>200 $</span>
+                                                </div>
+                                                <div class="applications-received">
+                                                    <b>привлечено заявок: </b>
+                                                    <span>79</span>
+                                                </div>
+                                                <div class="sales-received">
+                                                    <b>получено продаж: </b>
+                                                    <span>63</span>
+                                                </div>
+
+                                                <div class="application-purpose">
+                                                    <b>Цена заявки: </b>
+                                                    <span>2$/шт.</span>
+                                                </div>
+                                                <div class="total-profit">
+                                                    <b>прибыль: </b>
+                                                    <span>6200 $</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <!-- Add the progress bar element -->
+                        <div class="row mt-3 pt-3">
+                            <div class="col-12 col-lg-8 offset-lg-4">
+                                <div class="cases-carousel-progress-bar my-slider-progress">
+                                    <div class="cases-slider-progress-bar my-slider-progress-bar" id="caseProgressBar">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="use-regulation">
+        <div class="container step-cards-container">
+            <div class="row">
+                <div class="col-12 mb-4">
+                    <h2>Работаю <span class="nowrap-sm">по регламенту</span></h2>
+                </div>
+            </div>
+            <div class="row step-cards pt-3">
+
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4"  data-aos="fade-left" data-aos-delay="350">
+                    <div class="step-card p-3 p-lg-4">
+                        <p class="step-card-title">
+                            <span class="step-num">1/</span> Изучаю проект
+                        </p>
+                        <div class="step-card-body">
+                            <p>
+                                Знакомлюсь со спецификой, определяемся с целями
+                                и главным оффером.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4" data-aos="fade-left" data-aos-delay="700">
+                    <div class="step-card p-3 p-lg-4">
+                        <p class="step-card-title">
+                            <span class="step-num">2/</span> Стратегия продвижения
+                        </p>
+                        <div class="step-card-body">
+                            <p>
+                                Разрабатываю стратегию продвижения 
+                                и презентую ее Вам в формате созвона.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4" data-aos="fade-left" data-aos-delay="1050">
+                    <div class="step-card p-3 p-lg-4">
+                        <p class="step-card-title">
+                            <span class="step-num">3/</span> Готовлю материалы
+                        </p>
+                        <div class="step-card-body">
+                            <p>
+                                Запрашиваю примеры работ, команда готовит лид-формы, макеты, тексты 
+                                и мини-лендинги.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 row-2-card col-md-6 col-lg-4 mb-2 mb-md-4" data-aos="fade-up" data-aos-delay="2100">
+                    <div class="step-card p-3 p-lg-4">
+                        <p class="step-card-title">
+                            <span class="step-num">5/</span> Верстка
+                        </p>
+                        <div class="step-card-body">
+                            <p>Обсуждаем возможные условия дальнейшего сотрудничества.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 row-2-card col-md-6 col-lg-4 mb-2 mb-md-4" data-aos="fade-up" data-aos-delay="1750">
+                    <div class="step-card p-3 p-lg-4">
+                        <p class="step-card-title">
+                            <span class="step-num"></span>конец тестового периода
+                        </p>
+                        <div class="step-card-body">
+                            <p>
+                                По истечении первых 3-х дней бесплатный тестовый период заканчивается. 
+                                Присылаю отчет с результатами и начинаю готовить стратегию продвижения 
+                                на месяц вперед.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 row-2-card col-md-6 col-lg-4 mb-2 mb-md-4"  data-aos="fade-up" data-aos-delay="1400">
+                    <div class="step-card p-3 p-lg-4">
+                        <p class="step-card-title">
+                            <span class="step-num">4/</span> Тестовый запуск
+                        </p>
+                        <div class="step-card-body">
+                            <p>
+                                Запускаем мои проверенные и рабочие связки, которые принесут результаты 
+                                в первые 24 часа.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4" data-aos="fade-left" data-aos-delay="2450">
+                    <div class="step-card p-3 p-lg-4">
+                        <p class="step-card-title">
+                            <span class="step-num">6/</span> Масштабирование
+                        </p>
+                        <div class="step-card-body">
+                            <p>
+                                Запускаю эффективные связки на максимум, увеличивая число заявок
+                                и конечных клиентов.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4 mb-2 mb-md-4"  data-aos="fade-left" data-aos-delay="2800">
+                    <div class="step-card p-3 p-lg-4">
+                        <p class="step-card-title">
+                            <span class="step-num">7/</span> достижение целей
+                        </p>
+                        <div class="step-card-body">
+                            <p>
+                                Все расходы и результаты будут отражены в отчетах. Окупаю не только рекламный 
+                                бюджет, но и стоимость своих услуг.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section> 
+
+    <section class="performance-budget" id="budget">
+        <div class="container">
+            <div class="row align-items-center">
+
+                <div class="col-12 col-lg-6 mb-4 mb-lg-0 pb-3 pb-lg-0" data-aos="fade-right" data-aos-delay="650">
+                    <div class="performance-budget-info">
+                        <h3 class="mb-3">Какой рекламный бюджет нужен для достижения ваших целей?</h3>
+                        <p class="mb-4">
+                            Просто ответьте на вопросы ниже и узнайте, какой рекламный бюджет нужен 
+                            для получения желаемого результата и сколько будут стоить 
+                            <span class="nowrap">мои услуги.</span>
+                        </p>
+                        <form action="" class="budget-form">
+                            <div class="d-flex selects-control">
+                                <div class="me-lg-2">
+                                    <label for="service" class="pb-2">Какую услугу Вы планируете продвигать?</label>
+                                    <input type="text" class="service" id="budgetService"  placeholder="Выбрать">
+                                </div>
+                                <div class="ms-lg-2">
+                                    <label for="amount" class="pb-2">Сколько клиентов в месяц хотите привлекать?</label>
+                                    <input type="text" class="amount" id="budgetAmount" placeholder="Выбрать">
+                                </div>
+                            </div>
+                            <div class="mt-4">
+                                <label for="city" class="pb-2">Из какого вы города?</label>
+                                <input type="text" class="name" id="budgetCity" placeholder="Выбрать">
+                            </div>
+                            <div class="d-flex flex-column flex-sm-row mt-4">
+                                <input type="text" class="name me-lg-2 mb-4 mb-sm-0" placeholder="Ваше имя">
+                                <input type="text" class="phone ms-lg-2" placeholder="+7 (999) 999 99 99">
+                            </div>
+                            <div class="radio-wrap row align-items-center mt-2 mb-2 pt-3">
+                                <div class="col-12 col-xl-7 col-xxl-6">
+                                    <span class="text-white">Где вам было бы удобнее связаться?</span>
+                                </div>
+                                <div class="col-12 col-xl-5 col-xxl-6  d-flex justify-content-between justify-content-xl-end radio-label-wrap mt-4 mt-xl-0">
+                                    <div class="form-radio-btn ps-3 ps-md-1 ps-xl-0 ms-1 ms-md-3 ms-xl-0 pb-xl-1">
+                                        <input id="radio-budget-1" type="radio" name="radio" value="1" checked>
+                                        <label for="radio-budget-1">
+                                            Telegram
+                                            <img src="img/telegram-green.svg" class="ms-2" alt="telegram">
+                                        </label>
+                                    </div>
+                                    <div class="form-radio-btn pe-3 pe-md-1 pe-xl-0 me-1 me-md-3 me-xl-0 pb-xl-1">
+                                        <input id="radio-budget-2" type="radio" name="radio" value="2">
+                                        <label for="radio-budget-2">
+                                            WhatsApp
+                                            <img src="img/whatsapp-green.svg" class="ms-2" alt="whatsapp">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="budget-btn-wrap">   
+                                <a href="#" class="budget-btn default-btn px-5">Отправить заявку</a>
+                            </div>
+                            <div class="processing-consent mt-4">
+                                <p class="mb-0">
+                                    Нажимая на кнопку “Отправить заявку”, вы даете согласие на 
+                                    <a href="#">обработку персональных данных</a>
+                                    и 
+                                    <span class="nowrap">
+                                        соглашаетесь c <a href="#">политикой конфиденциальности</a>
+                                    </span>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-6" data-aos="fade-left" data-aos-delay="650">
+                    <div class="perfomance-budget-img">
+                        <img src="img/DSC08799-budget.png" class="img-fluid" alt="">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="customer-interviews" id="interview">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="mb-3">Интервью <span class="nowrap-sm">с клиентами</span></h2>
+                    <p class="mb-4">Все кейсы подтверждены ссылкой на аккаунт и видео-отзывом</p>
+                </div>
+                <div class="col-12">
+                    <div class="splide pt-2 pt-lg-5" id="splideInterviews">
+                        <div class="splide__track">
+                            <ul class="splide__list">
+                                <li class="splide__slide">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-5 col-xl-4">
+                                            <div class="slide-img-wrap h-100">
+                                                <div class="slide-img-stopper h-100">
+                                                    <div class="slide-stopper-btn-wrap">
+                                                        <a href="#" class="slide-stopper-btn pulse">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-7 col-xl-8">
+                                            <div class="slide-info-wrap green-border">
+                                                <div class="client">
+                                                    <div class="client-info">
+                                                        <b>Клиент:</b> 
+                                                        Екатерина, мастер перманентного макияжа в Валенсии
+                                                    </div>
+                                                    <div class="client-inst">
+                                                        <a href="#">
+                                                            <img src="img/instagram-green.svg" alt="">
+                                                            <span>@katiaslavnaya</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="project-desc align-items-start flex-column">
+                                                    <div class="pb-2">
+                                                        <b>Описание проекта:</b>
+                                                    </div>
+                                                    <p>
+                                                        Я делал рассылку на мастеров перманентного макияжа в Испании и предлагал 
+                                                        привести им первых клиентов на их услуги полностью бесплатно, чтобы таким 
+                                                        образом начать с ними сотрудничество. На тот момент количество клиентов 
+                                                        у Екатерины оставляло желать лучшего, а рекламный бюджет 
+                                                        составлял всего $200.
+                                                    </p>
+                                                </div>
+                                                <div class="change-situation align-items-start flex-column">
+                                                    <div class="pb-2">
+                                                        <b>Как изменилась ситуация после сотрудничества со мной?</b>
+                                                    </div>
+                                                    <span>Смотрите интервью.</span>
+                                                </div>
+                                                <div class="total-profit align-items-center pb-0 mb-0">
+                                                    <b>ИТОГ сотрудничества:</b>
+                                                    <span class="green-profit">+28 000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-5 col-xl-4">
+                                            <div class="slide-img-wrap h-100">
+                                                <div class="slide-img-stopper h-100">
+                                                    <div class="slide-stopper-btn-wrap">
+                                                        <a href="#" class="slide-stopper-btn pulse">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-7 col-xl-8">
+                                            <div class="slide-info-wrap green-border">
+                                                <div class="client">
+                                                    <div class="client-info">
+                                                        <b>Клиент:</b> 
+                                                        Екатерина, мастер перманентного макияжа в Валенсии
+                                                    </div>
+                                                    <div class="client-inst">
+                                                        <a href="#">
+                                                            <img src="img/instagram-green.svg" alt="">
+                                                            <span>@katiaslavnaya</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="project-desc align-items-start flex-column">
+                                                    <div class="pb-2">
+                                                        <b>Описание проекта:</b>
+                                                    </div>
+                                                    <p>
+                                                        Я делал рассылку на мастеров перманентного макияжа в Испании и предлагал 
+                                                        привести им первых клиентов на их услуги полностью бесплатно, чтобы таким 
+                                                        образом начать с ними сотрудничество. На тот момент количество клиентов 
+                                                        у Екатерины оставляло желать лучшего, а рекламный бюджет 
+                                                        составлял всего $200.
+                                                    </p>
+                                                </div>
+                                                <div class="change-situation align-items-start flex-column">
+                                                    <div class="pb-2">
+                                                        <b>Как изменилась ситуация после сотрудничества со мной?</b>
+                                                    </div>
+                                                    <span>Смотрите интервью.</span>
+                                                </div>
+                                                <div class="total-profit align-items-center pb-0 mb-0">
+                                                    <b>ИТОГ сотрудничества:</b>
+                                                    <span class="green-profit">+28 000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-5 col-xl-4">
+                                            <div class="slide-img-wrap h-100">
+                                                <div class="slide-img-stopper h-100">
+                                                    <div class="slide-stopper-btn-wrap">
+                                                        <a href="#" class="slide-stopper-btn pulse">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-7 col-xl-8">
+                                            <div class="slide-info-wrap green-border">
+                                                <div class="client">
+                                                    <div class="client-info">
+                                                        <b>Клиент:</b> 
+                                                        Екатерина, мастер перманентного макияжа в Валенсии
+                                                    </div>
+                                                    <div class="client-inst">
+                                                        <a href="#">
+                                                            <img src="img/instagram-green.svg" alt="">
+                                                            <span>@katiaslavnaya</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="project-desc align-items-start flex-column">
+                                                    <div class="pb-2">
+                                                        <b>Описание проекта:</b>
+                                                    </div>
+                                                    <p>
+                                                        Я делал рассылку на мастеров перманентного макияжа в Испании и предлагал 
+                                                        привести им первых клиентов на их услуги полностью бесплатно, чтобы таким 
+                                                        образом начать с ними сотрудничество. На тот момент количество клиентов 
+                                                        у Екатерины оставляло желать лучшего, а рекламный бюджет 
+                                                        составлял всего $200.
+                                                    </p>
+                                                </div>
+                                                <div class="change-situation align-items-start flex-column">
+                                                    <div class="pb-2">
+                                                        <b>Как изменилась ситуация после сотрудничества со мной?</b>
+                                                    </div>
+                                                    <span>Смотрите интервью.</span>
+                                                </div>
+                                                <div class="total-profit align-items-center pb-0 mb-0">
+                                                    <b>ИТОГ сотрудничества:</b>
+                                                    <span class="green-profit">+28 000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li class="splide__slide">
+                                    <div class="row">
+                                        <div class="col-12 col-lg-5 col-xl-4">
+                                            <div class="slide-img-wrap h-100">
+                                                <div class="slide-img-stopper h-100">
+                                                    <div class="slide-stopper-btn-wrap">
+                                                        <a href="#" class="slide-stopper-btn pulse">
+                                                            <span></span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-lg-7 col-xl-8">
+                                            <div class="slide-info-wrap green-border">
+                                                <div class="client">
+                                                    <div class="client-info">
+                                                        <b>Клиент:</b> 
+                                                        Екатерина, мастер перманентного макияжа в Валенсии
+                                                    </div>
+                                                    <div class="client-inst">
+                                                        <a href="#">
+                                                            <img src="img/instagram-green.svg" alt="">
+                                                            <span>@katiaslavnaya</span>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="project-desc align-items-start flex-column">
+                                                    <div class="pb-2">
+                                                        <b>Описание проекта:</b>
+                                                    </div>
+                                                    <p>
+                                                        Я делал рассылку на мастеров перманентного макияжа в Испании и предлагал 
+                                                        привести им первых клиентов на их услуги полностью бесплатно, чтобы таким 
+                                                        образом начать с ними сотрудничество. На тот момент количество клиентов 
+                                                        у Екатерины оставляло желать лучшего, а рекламный бюджет 
+                                                        составлял всего $200.
+                                                    </p>
+                                                </div>
+                                                <div class="change-situation align-items-start flex-column">
+                                                    <div class="pb-2">
+                                                        <b>Как изменилась ситуация после сотрудничества со мной?</b>
+                                                    </div>
+                                                    <span>Смотрите интервью.</span>
+                                                </div>
+                                                <div class="total-profit align-items-center pb-0 mb-0">
+                                                    <b>ИТОГ сотрудничества:</b>
+                                                    <span class="green-profit">+28 000</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        
+                        <div class="row mt-3 pt-3">
+                            <div class="col-12 col-lg-8 offset-lg-4">
+                                <div class="interviews-carousel-progress-bar my-slider-progress" >
+                                    <div class="interviews-slider-progress-bar my-slider-progress-bar" id="InterviewSliderProgress"></div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="choose-tariff" id="tariff">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h2 class="text-start text-md-center mb-4 mb-md-0 pb-2 pb-md-0">
+                        Выберите <span class="nowrap-xs">удобный тариф</span>
+                    </h2>
+                </div>
+            </div>
+            <div class="row d-md-none">
+                <div class="col-12 px-sm-0 mb-3">
+                    <div class="tariff-wrap">
+                        <ul class="tariff-wrap-list" data-toggle-id="1">
+                            <li class="tariff-name standart border-0 text-start pt-4 pb-0">
+                                <span class="pt-4 ps-2">Standart</span>
+                            </li>
+                            <li class="trial-period border-0 text-start4py-1 pt-1 pb-2">
+                                <span class="ps-2">3 дня - пробный период</span>
+                            </li>
+                            <li class="tariff-price border-0 text-start align-items-center flex-row pt-2">
+                                <sup class="ps-2">$</sup><span class="digit">390</span><span class="in-month ps-2">/месяц</span>
+                            </li>
+                            <li class="pt-1">
+                                <a href="javascript:void(0)" class="toggle-btn ps-2">
+                                    <span class="pe-1 pb-1">Что включено в тариф?</span>
+                                    <div class="arrow-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 14.2071C15.8166 14.5976 15.1834 14.5976 14.7929 14.2071L12 11.4142L9.20711 14.2071C8.81658 14.5976 8.18342 14.5976 7.79289 14.2071C7.40237 13.8166 7.40237 13.1834 7.79289 12.7929L11.2929 9.29289C11.6834 8.90237 12.3166 8.90237 12.7071 9.29289L16.2071 12.7929C16.5976 13.1834 16.5976 13.8166 16.2071 14.2071Z" fill="#fff"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tariff-list-hide-item"><span><b>Количество услуг для продвижения:</b></span><span>1</span></li>
+
+                            <li class="tariff-list-hide-item"><span><b>Отчетность:</b></span><span>1 раз в неделю</span></li>
+                            <li class="tariff-list-hide-item"><span><b>Бесплатный период:</b></span><span>3 дня</span></li>
+                            <li class="tariff-list-hide-item"><span><b>Анализ целевой аудитории</b></span><img src="img/check.svg" alt=""></li>
+                            <li class="tariff-list-hide-item">
+                                <span>
+                                    <b>Подготовка материалов <br>
+                                    для запуска рекламы</b>
+                                </span>
+                                <img src="img/check.svg" alt="">
+                            </li>
+                            <li class="tariff-list-hide-item">
+                                <span><b>Настройка и запуск рекламы</b></span>
+                                <img src="img/check.svg" alt="">
+                            </li>
+                            <li class="tariff-list-hide-item">
+                                <span><b>Конкурентный анализ</b></span>
+                                <b>-</b>
+                            </li>
+                            <li class="border-0">
+                                <a href="#" class="tariff-btn default-btn w-100 mt-2 mb-2">Выбрать</a>
+                            </li>
+                        </ul>      
+                    </div> 
+                </div>
+                <div class="col-12 px-sm-0 mb-3">
+                    <div class="tariff-wrap">
+                        <ul class="tariff-wrap-list" data-toggle-id="2">
+                            <li class="tariff-name optimum border-0 text-start pt-4 pb-0">
+                                <span class="pt-4 ps-2">Optimum</span>
+                            </li>
+                            <li class="trial-period border-0 text-start pt-1 pb-2">
+                                <span class="ps-2">3 дня - пробный период</span>
+                            </li>
+                            <li class="tariff-price border-0 text-start align-items-center flex-row pt-2">
+                                <sup class="ps-2">$</sup><span class="digit">590</span><span class="in-month ps-2">/месяц</span>
+                            </li>
+                            <li class="pt-1">
+                                <a href="javascript:void(0)" class="toggle-btn active ps-2">
+                                    <span class="pe-1 pb-1">Что включено в тариф?</span>
+                                    <div class="arrow-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 14.2071C15.8166 14.5976 15.1834 14.5976 14.7929 14.2071L12 11.4142L9.20711 14.2071C8.81658 14.5976 8.18342 14.5976 7.79289 14.2071C7.40237 13.8166 7.40237 13.1834 7.79289 12.7929L11.2929 9.29289C11.6834 8.90237 12.3166 8.90237 12.7071 9.29289L16.2071 12.7929C16.5976 13.1834 16.5976 13.8166 16.2071 14.2071Z" fill="#fff"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tariff-list-hide-item visible"><span><b>Количество услуг для продвижения:</b></span><span>1</span></li>
+
+                            <li class="tariff-list-hide-item visible"><span><b>Отчетность:</b></span><span>1 раз в неделю</span></li>
+                            <li class="tariff-list-hide-item visible"><span><b>Бесплатный период:</b></span><span>3 дня</span></li>
+                            <li class="tariff-list-hide-item visible"><span><b>Анализ целевой аудитории</b></span><img src="img/check.svg" alt=""></li>
+                            <li class="tariff-list-hide-item visible">
+                                <span>
+                                    <b>Подготовка материалов <br>
+                                    для запуска рекламы</b>
+                                </span>
+                                <img src="img/check.svg" alt="">
+                            </li>
+                            <li class="tariff-list-hide-item visible">
+                                <span><b>Настройка и запуск рекламы</b></span>
+                                <img src="img/check.svg" alt="">
+                            </li>
+                            <li class="tariff-list-hide-item visible">
+                                <span><b>Конкурентный анализ</b></span>
+                                <img src="img/check.svg" alt="">
+                            </li>
+                            <li class="border-0">
+                                <a href="#" class="tariff-btn default-btn w-100 mt-2 mb-2">Выбрать</a>
+                            </li>
+                        </ul>  
+                    </div> 
+                </div>
+                <div class="col-12 px-sm-0">
+                    <div class="tariff-wrap">
+                        <ul class="tariff-wrap-list" data-toggle-id="3">
+                            <li class="tariff-name maximum border-0 text-start pt-4 pb-0">
+                                <span class="pt-4 ps-2">Maximum</span>
+                            </li>
+                            <li class="trial-period border-0 text-start pt-1 pb-2">
+                                <span class="ps-2">3 дня - пробный период</span><span>3</span>
+                            </li>
+                            <li class="tariff-price border-0 text-start align-items-center flex-row pt-1">
+                                <sup class="ps-2">$</sup><span class="digit">790</span>
+                                <span class="in-month ps-2">/месяц</span>
+                            </li>
+                            <li class="pt-1">
+                                <a href="javascript:void(0)" class="toggle-btn ps-2">
+                                    <span class="pe-1 pb-1">Что включено в тариф?</span>
+                                    <div class="arrow-container">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M16.2071 14.2071C15.8166 14.5976 15.1834 14.5976 14.7929 14.2071L12 11.4142L9.20711 14.2071C8.81658 14.5976 8.18342 14.5976 7.79289 14.2071C7.40237 13.8166 7.40237 13.1834 7.79289 12.7929L11.2929 9.29289C11.6834 8.90237 12.3166 8.90237 12.7071 9.29289L16.2071 12.7929C16.5976 13.1834 16.5976 13.8166 16.2071 14.2071Z" fill="#fff"/>
+                                        </svg>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="tariff-list-hide-item"><span><b>Количество услуг для продвижения:</b></span></li>
+
+                            <li class="tariff-list-hide-item"><span><b>Отчетность:</b></span><b></b></li>
+                            <li class="tariff-list-hide-item"><span><b>1 раз в неделю</b></span></li>
+                            <li class="tariff-list-hide-item"><span>3 дня</span></li>
+                            <li class="tariff-list-hide-item">
+                                <span>
+                                    <b>Подготовка материалов <br>
+                                    для запуска рекламы</b>
+                                </span>
+                                <img src="img/check.svg" alt="">
+                            </li>
+                            <li class="tariff-list-hide-item">
+                                <span><b>Настройка и запуск рекламы</b></span>
+                                <img src="img/check.svg" alt="">
+                            </li>
+                            <li class="tariff-list-hide-item">
+                                <span><b>Конкурентный анализ</b></span>
+                                <img src="img/check.svg" alt="">
+                            </li>
+                            <li class="border-0">
+                                <a href="#" class="tariff-btn default-btn w-100 mt-2 mb-2">Выбрать</a>
+                            </li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+            <div class="row d-none d-md-flex">
+                <div class="col-12 tariff-col">
+                    <ul class="list-group w-100">
+                        <li class="list-group-item row">
+                            <span class="col-3 col-lg-4 col-xxl-auto pb-0 me-2 me-xl-4 pb-2 border-0"></span>
+                            <div class="col pb-0 mx-2 mx-xl-4 pb-2 border-0">
+                                <div class="tariff-name standart">
+                                    <span>Standart</span>
+                                </div>
+                            </div>
+                            <div class="col pb-0 mx-2 mx-xl-4 pb-2 border-transparent">
+                                <div class="tariff-name optimum">
+                                    <span>Optimum</span>
+                                </div>
+                            </div>
+                            <div class="col pb-0 ms-2 ms-xl-4 pb-2 border-0">
+                                <div class="tariff-name maximum">
+                                    <span>Maximum</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item pt-0 pb-0 row">
+                            <span class="col-3 col-lg-4 col-xxl-auto pt-2 pb-2 pb-lg-4 me-2 me-xl-4 border-0"></span>
+                            <div class="col pt-2 pb-2 pb-lg-4 mx-2 mx-xl-4 border-0">
+                                <div class="trial-period">
+                                    <span>3 дня - пробный период</span>
+                                </div>
+                            </div>
+                            <div class="col pt-2 pb-2 pb-lg-4 mx-2 mx-xl-4 border-transparent">
+                                <div class="trial-period">
+                                    <span>3 дня - пробный период</span>
+                                </div>
+                            </div>
+                            <div class="col pt-2 pb-2 pb-lg-4 ms-2 ms-xl-4 border-0">
+                                <div class="trial-period">
+                                    <span>3 дня - пробный период</span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="list-group-item row">
+                            <span class="col-3 col-lg-4 col-xxl-auto me-2 me-xl-4 border-0"></span>
+                            <div class="col mx-2 mx-xl-4 border-0">
+                                <div class="tariff-price">
+                                    <span><sup>$</sup><b class="price-digit">390</b>
+                                    <span>В месяц</span>
+                                </div>
+                            </div>
+                            <div class="col mx-2 mx-xl-4 border-transparent">
+                                <div class="tariff-price">
+                                    <span><sup>$</sup><b class="price-digit">590</b></span>
+                                    <span>В месяц</span>
+                                </div>
+                            </div>
+                            <div class="col ms-2 ms-xl-4 border-0">
+                                <div class="tariff-price">
+                                    <span><sup>$</sup><b class="price-digit">790</b></span>
+                                    <span>В месяц</span>
+                                </div>
+                            </div>
+                        </li>
+                        
+                        <li class="list-group-item row">
+                            <span class="col-3 col-lg-4 col-xxl-auto me-2 me-xl-4">Количество услуг для продвижения</span>
+                            <div class="col mx-2 mx-xl-4"><span>1</span></div>
+                            <div class="col mx-2 mx-xl-4"><span>2</span></div>
+                            <div class="col ms-2 ms-xl-4"><span>3</span></div>
+                        </li>
+                        <li class="list-group-item row">
+                            <span class="col-3 col-lg-4 col-xxl-auto me-2 me-xl-4">Отчетность</span>
+                            <div class="col mx-2 mx-xl-4"><span>1 раз в месяц</span></div>
+                            <div class="col mx-2 mx-xl-4"><span>1 раз в неделю</span></div>
+                            <div class="col ms-2 ms-xl-4"><span>1 раз в неделю</span></div>
+                        </li>
+                        <li class="list-group-item row">
+                            <span class="col-3 col-lg-4 col-xxl-auto me-2 me-xl-4">Бесплатный период</span>
+                            <div class="col mx-2 mx-xl-4"><span>3 дня</span></div>
+                            <div class="col mx-2 mx-xl-4"><span>3 дня</span></div>
+                            <div class="col ms-2 ms-xl-4"><span>3 дня</span></div>
+                        </li>
+                        <li class="list-group-item row">
+                            <span class="col-3 col-lg-4 col-xxl-auto me-2 me-xl-4">Анализ целевой аудитории</span>
+                            <div class="col mx-2 mx-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                            <div class="col mx-2 mx-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                            <div class="col ms-2 ms-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                        </li>
+                        <li class="list-group-item row">
+                            <span class="col-3 col-lg-4 col-xxl-auto me-2 me-xl-4">
+                                Подготовка материалов <br>
+                                для запуска рекламы
+                            </span>
+                            <div class="col mx-2 mx-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                            <div class="col mx-2 mx-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                            <div class="col ms-2 ms-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                        </li>
+                        <li class="list-group-item row">
+                            <span class="col-3 col-lg-4 col-xxl-auto me-2 me-xl-4">Настройка и запуск рекламы</span>
+                            <div class="col mx-2 mx-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                            <div class="col mx-2 mx-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                            <div class="col ms-2 ms-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                        </li>
+                        <li class="list-group-item row">
+                            <span class="col-3 col-lg-4 col-xxl-auto me-2 me-xl-4">Конкурентный анализ</span>
+                            <div class="col mx-2 mx-xl-4"><b class="opacity-25">-</b></div>
+                            <div class="col mx-2 mx-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                            <div class="col ms-2 ms-xl-4"><img src="img/check.svg" alt="check-mark"></div>
+                        </li>
+                        <li class="list-group-item row">
+                            <span class="col-3 col-lg-4 col-xxl-auto border-0 me-2 me-xl-4"></span>
+                            <div class="col d-flex align-items-center border-0 mx-2 mx-xl-4">
+                                <button href="#" class="tariff-btn default-btn modal-standart-btn" id="myBtn">Выбрать</button>
+                            </div>
+                            <div class="col d-flex align-items-center border-0 mx-2 mx-xl-4">
+                                <button href="#" class="tariff-btn default-btn modal-optimum-btn">Выбрать</button>
+                            </div>
+                            <div class="col d-flex align-items-center border-0 ms-2 ms-xl-4">
+                                <button href="#" class="tariff-btn default-btn modal-maximum-btn">Выбрать</button>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="business-club">
+        <div class="container ticket-wrap" data-aos="fade-up" data-aos-delay="350">
+            <div class="row ticket-row">
+
+                <div class="col-12 col-lg-7 col-xl-6">
+                    <div class="ticket-txt-info">
+                        <h3 class="mb-4">
+                            Вступайте <span class="nowrap-sm">в бизнес-клуб</span> вашей страны
+                        </h3>
+                        <p>
+                            Я задался целью создать большие community в beauty-сфере
+                            из каждой страны, чтобы вы могли обмениваться опытом 
+                            <span class="nowrap">и развиваться</span> вместе со своими коллегами.
+                        </p>
+                        <p>
+                            Просто заполните форму справа. Я свяжусь с вами
+                            в ближайшее время и добавлю в ваше community.
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 col-xl-6 mt-4 mt-lg-0">
+                    <div class="ticket-form-wrap">
+                        <form action="" class="ticket-form">
+                            <div>
+                                <input type="text" class="name w-100" id="ticketClientName" placeholder="Ваше имя">
+                            </div>
+                            <div class="mt-4">
+                                <label for="">Ваша страна</label>
+                                <input type="text" class="name w-100" placeholder="Выбрать">
+                            </div>
+                            <div class="mt-4">
+                                <input type="text" class="phone w-100" placeholder="+7 (999) 999 99 99">
+                            </div>
+                            <div class="radio-wrap align-items-center mb-4 mt-4 row">
+                                <div class="col-12 col-xl-5 col-xxl-5">
+                                    <span class="text-white">Где вам было бы удобнее связаться?</span>
+                                </div>
+                                <div class="col-12 col-xl-7 col-xxl-6  d-flex justify-content-between justify-content-xl-end radio-label-wrap mt-4 mt-xl-0">
+                                    <div class="form-radio-btn ps-3 ps-md-1 ps-xl-0 ms-1 ms-md-3 ms-xl-0 ">
+                                        <input id="radio-ticket-1" type="radio" name="radio" value="1" checked>
+                                        <label for="radio-ticket-1">
+                                            Telegram
+                                            <img src="img/telegram-green.svg" class="ms-2" alt="telegram">
+                                        </label>
+                                    </div>
+                                    <div class="form-radio-btn pe-3 pe-md-1 pe-xl-0 me-1 me-md-3 me-xl-0">
+                                        <input id="radio-ticket-2" type="radio" name="radio" value="2">
+                                        <label for="radio-ticket-2">
+                                            WhatsApp
+                                            <img src="img/whatsapp-green.svg" class="ms-2" alt="whatsapp">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <a href="#" class="default-btn w-100">Отправить заявку</a>
+                            <div class="processing-consent mt-4">
+                                <p class="mb-0">
+                                    Нажимая на кнопку “Отправить заявку”, вы даете согласие на 
+                                    <a href="#">обработку персональных данных</a>
+                                    и соглашаетесь c <a href="#">политикой конфиденциальности</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="any-questions" id="contact">
+        <div class="container">
+            <div class="row ">
+                <div class="col-12">
+                    <h2>У вас остались вопросы?</h2>
+                    <p>Задайте их в форму ниже или свяжитесь со мной любым удобным способом.</p>
+                </div>
+            </div>
+            <div class="row justify-content-between pb-md-5 pb-lg-0">
+                <div class="col-12 col-lg-7 col-xl-6 mb-4 mb-lg-0" data-aos="fade-right" data-aos-delay="350">
+                    <div class="main-contacts-wrap">
+                        <div class="contacts-wrap">
+                            <div class="main-contact-block">
+                                <p><b class="text-uppercase">почта:</b> shvedovsmm@gmail.com</p>
+                                <div class="d-flex cta-tlg-wtsp my-4">
+                                    <div class="cta-tlg">
+                                        <div class="me-2">
+                                            <a href="#" class="text-decoration-none">
+                                                <span><b class="d-none d-md-inline">Написать в </b>Telegram</span>
+                                            </a>
+                                        </div>
+                                        <a href="#">
+                                            <img src="img/telegram-green.svg" alt="">
+                                        </a>
+                                    </div>
+                                    <div class="cta-wtsp">
+                                        <div class="me-2">
+                                            <a href="#" class="text-decoration-none">
+                                                <span><b class="d-none d-md-inline">Написать в </b>WhatsApp</span>
+                                            </a>
+                                        </div>  
+                                        <a href="#">
+                                            <img src="img/whatsapp-green.svg" alt="">
+                                        </a>
+                                    </div>
+                                </div>
+                                <p>
+                                    Нажмите “Ctrl / Cmd + D”, чтобы моя страница всегда была у Вас под рукой.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="soc-networks d-none d-md-flex">
+                            <span>Мои каналы в соцсетях:</span>
+                            <div class="soc-icons">
+                                <div class="soc-icon-wrap">
+                                    <a href="https://instagram.com/smmshvedov?igshid=MzRlODBiNWFlZA==">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 6C19.1112 6 18.4992 6.0204 16.5792 6.108C14.6628 6.1956 13.3536 6.5004 12.2088 6.9456C11.0088 7.3968 9.9204 8.1048 9.0204 9.0216C8.10507 9.92056 7.39663 11.0082 6.9444 12.2088C6.5016 13.3536 6.1956 14.664 6.108 16.5804C6.0216 18.4992 6 19.11 6 24C6 28.89 6.0204 29.5008 6.108 31.4208C6.1956 33.3372 6.5004 34.6464 6.9456 35.7912C7.3968 36.9912 8.1048 38.0796 9.0216 38.9796C9.92058 39.8949 11.0082 40.6033 12.2088 41.0556C13.3536 41.4996 14.6628 41.8044 16.5792 41.892C18.4992 41.9796 19.1112 42 24 42C28.8888 42 29.5008 41.9796 31.4208 41.892C33.3372 41.8044 34.6464 41.4996 35.7912 41.0544C36.9912 40.6032 38.0796 39.8952 38.9796 38.9784C39.8949 38.0794 40.6034 36.9918 41.0556 35.7912C41.4996 34.6464 41.8044 33.3372 41.892 31.4208C41.9796 29.5008 42 28.8888 42 24C42 19.1112 41.9796 18.4992 41.892 16.5792C41.8044 14.6628 41.4996 13.3536 41.0544 12.2088C40.6025 11.0077 39.894 9.91959 38.9784 9.0204C38.0794 8.10507 36.9918 7.39663 35.7912 6.9444C34.6464 6.5016 33.336 6.1956 31.4196 6.108C29.5008 6.0216 28.89 6 24 6ZM24 9.2436C28.806 9.2436 29.376 9.2616 31.2744 9.348C33.0288 9.4284 33.9816 9.72 34.6164 9.9684C35.4564 10.2936 36.0564 10.6848 36.6864 11.3136C37.3164 11.9436 37.7064 12.5436 38.0316 13.3836C38.2788 14.0184 38.5716 14.9712 38.652 16.7256C38.7384 18.624 38.7564 19.194 38.7564 24C38.7564 28.806 38.7384 29.376 38.652 31.2744C38.5716 33.0288 38.28 33.9816 38.0316 34.6164C37.7435 35.3983 37.2839 36.1056 36.6864 36.6864C36.1057 37.284 35.3983 37.7437 34.6164 38.0316C33.9816 38.2788 33.0288 38.5716 31.2744 38.652C29.376 38.7384 28.8072 38.7564 24 38.7564C19.1928 38.7564 18.624 38.7384 16.7256 38.652C14.9712 38.5716 14.0184 38.28 13.3836 38.0316C12.6017 37.7435 11.8944 37.2839 11.3136 36.6864C10.7162 36.1055 10.2566 35.3982 9.9684 34.6164C9.7212 33.9816 9.4284 33.0288 9.348 31.2744C9.2616 29.376 9.2436 28.806 9.2436 24C9.2436 19.194 9.2616 18.624 9.348 16.7256C9.4284 14.9712 9.72 14.0184 9.9684 13.3836C10.2936 12.5436 10.6848 11.9436 11.3136 11.3136C11.8943 10.7161 12.6017 10.2564 13.3836 9.9684C14.0184 9.7212 14.9712 9.4284 16.7256 9.348C18.624 9.2616 19.194 9.2436 24 9.2436Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M24 30.006C23.2113 30.006 22.4303 29.8507 21.7016 29.5488C20.973 29.247 20.3109 28.8046 19.7532 28.2469C19.1955 27.6892 18.7531 27.0271 18.4512 26.2984C18.1494 25.5697 17.994 24.7887 17.994 24C17.994 23.2113 18.1494 22.4303 18.4512 21.7016C18.7531 20.9729 19.1955 20.3108 19.7532 19.7531C20.3109 19.1954 20.973 18.753 21.7016 18.4512C22.4303 18.1494 23.2113 17.994 24 17.994C25.5929 17.994 27.1206 18.6268 28.2469 19.7531C29.3733 20.8795 30.006 22.4071 30.006 24C30.006 25.5929 29.3733 27.1205 28.2469 28.2469C27.1206 29.3732 25.5929 30.006 24 30.006ZM24 14.748C21.5463 14.748 19.193 15.7228 17.4579 17.4579C15.7228 19.1929 14.748 21.5462 14.748 24C14.748 26.4538 15.7228 28.8071 17.4579 30.5422C19.193 32.2772 21.5463 33.252 24 33.252C26.4538 33.252 28.8071 32.2772 30.5422 30.5422C32.2773 28.8071 33.252 26.4538 33.252 24C33.252 21.5462 32.2773 19.1929 30.5422 17.4579C28.8071 15.7228 26.4538 14.748 24 14.748ZM35.9436 14.58C35.9436 15.16 35.7132 15.7163 35.3031 16.1264C34.8929 16.5366 34.3367 16.767 33.7566 16.767C33.1766 16.767 32.6203 16.5366 32.2102 16.1264C31.8001 15.7163 31.5696 15.16 31.5696 14.58C31.5696 14 31.8001 13.4437 32.2102 13.0336C32.6203 12.6234 33.1766 12.393 33.7566 12.393C34.3367 12.393 34.8929 12.6234 35.3031 13.0336C35.7132 13.4437 35.9436 14 35.9436 14.58Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="soc-icon-wrap">
+                                    <a href="https://t.me/smmshvedov">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24ZM24.7167 18.7649C22.7714 19.574 18.8835 21.2487 13.0531 23.7889C12.1064 24.1654 11.6104 24.5337 11.5652 24.8939C11.4889 25.5025 12.2512 25.7422 13.2891 26.0686C13.4303 26.113 13.5766 26.159 13.7265 26.2077C14.7477 26.5397 16.1213 26.928 16.8354 26.9434C17.4832 26.9574 18.2062 26.6904 19.0044 26.1423C24.4519 22.465 27.2639 20.6064 27.4405 20.5663C27.565 20.538 27.7376 20.5025 27.8546 20.6064C27.9715 20.7104 27.96 20.9072 27.9476 20.96C27.8721 21.2819 24.8802 24.0635 23.3318 25.503C22.8491 25.9517 22.5068 26.2701 22.4368 26.3428C22.28 26.5056 22.1202 26.6597 21.9666 26.8077C21.0179 27.7222 20.3065 28.4081 22.006 29.528C22.8227 30.0662 23.4762 30.5113 24.1282 30.9553C24.8402 31.4402 25.5504 31.9238 26.4693 32.5261C26.7034 32.6796 26.927 32.839 27.1448 32.9942C27.9734 33.585 28.7179 34.1157 29.6376 34.0311C30.172 33.9819 30.7241 33.4794 31.0044 31.9806C31.667 28.4386 32.9693 20.7641 33.2703 17.6016C33.2967 17.3246 33.2635 16.97 33.2369 16.8143C33.2102 16.6586 33.1546 16.4369 32.9522 16.2727C32.7126 16.0782 32.3427 16.0372 32.1772 16.0402C31.425 16.0534 30.2709 16.4547 24.7167 18.7649Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="soc-icon-wrap">
+                                    <a href="https://www.youtube.com/channel/UCVnht6CUJ41q6-OaOrCgudg">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M39.5841 10.8294C41.3042 11.2915 42.665 12.6523 43.1271 14.3724C43.9743 17.5046 44 24.0001 44 24.0001C44 24.0001 44 30.5213 43.1528 33.6279C42.6906 35.348 41.3299 36.7087 39.6098 37.1709C36.5032 38.0181 24 38.0181 24 38.0181C24 38.0181 11.4968 38.0181 8.39025 37.1709C6.67009 36.7087 5.30937 35.348 4.84724 33.6279C4 30.4957 4 24.0001 4 24.0001C4 24.0001 4 17.5046 4.82157 14.3981C5.2837 12.6779 6.64442 11.3172 8.36457 10.8551C11.4711 10.0078 23.9743 9.98218 23.9743 9.98218C23.9743 9.98218 36.4775 9.98218 39.5841 10.8294ZM30.3671 24.0002L19.9949 30.0079V17.9925L30.3671 24.0002Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                                <div class="soc-icon-wrap">
+                                    <a href="https://www.tiktok.com/@smmshvedov?_t=8gL993ZJ6av">
+                                        <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                            <path d="M36.2308 12.0179C34.0762 10.613 32.521 8.36524 32.0359 5.74493C31.9311 5.17879 31.8735 4.59614 31.8735 4H24.9967L24.9857 31.5599C24.8701 34.6461 22.33 37.1232 19.2161 37.1232C18.2483 37.1232 17.337 36.8812 16.5346 36.459C14.6946 35.4907 13.4354 33.562 13.4354 31.3426C13.4354 28.155 16.0287 25.5617 19.2161 25.5617C19.8111 25.5617 20.3818 25.6598 20.9217 25.829V18.8085C20.363 18.7324 19.7953 18.6848 19.2161 18.6848C12.2366 18.6848 6.55859 24.3631 6.55859 31.3426C6.55859 35.6248 8.6981 39.4144 11.9622 41.7059C14.0181 43.1493 16.519 44 19.2161 44C26.1955 44 31.8735 38.3221 31.8735 31.3426V17.3673C34.5707 19.3032 37.8752 20.444 41.4409 20.444V13.5672C39.5202 13.5672 37.7312 12.9962 36.2308 12.0179Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                        </svg>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- <div class="col-6 d-flex justify-content-end"> -->
+                <div class="col-12 col-lg-5 col-xl-6" data-aos="fade-left" data-aos-delay="350">
+                    <div class="quiestions-form-wrap">
+                        <form action="">
+                            <input type="text" name="quiestions-name" class="w-100 mb-4" placeholder="Ваше имя">
+                            <input type="text" name="quiestions-form" class="w-100 mb-4" placeholder="+7 (999) 999 99 99">
+                            <label for="question" class="mb-2">Ваш вопрос</label>
+                            <textarea name="question" class="mb-4" id="question" cols="30" rows="4" placeholder="Введите текст..."></textarea>
+                            <div class="radio-wrap align-items-center mb-4 row">
+                                <div class="col-12 col-xl-5 col-xxl-5">
+                                    <span class="text-white">Где вам было бы удобнее связаться?</span>
+                                </div>
+                                <div class="col-12 col-xl-7 col-xxl-6  d-flex justify-content-between justify-content-xl-end radio-label-wrap mt-4 mt-xl-0">
+                                    <div class="form-radio-btn ps-3 ps-md-1 ps-xl-0 ms-1 ms-md-3 ms-xl-0 ">
+                                        <input id="radio-contact-1" type="radio" name="radio" value="1" checked>
+                                        <label for="radio-contact-1">
+                                            Telegram
+                                            <img src="img/telegram-green.svg" class="ms-2" alt="telegram">
+                                        </label>
+                                    </div>
+                                    <div class="form-radio-btn pe-3 pe-md-1 pe-xl-0 me-1 me-md-3 me-xl-0">
+                                        <input id="radio-contact-2" type="radio" name="radio" value="2">
+                                        <label for="radio-contact-2">
+                                            WhatsApp
+                                            <img src="img/whatsapp-green.svg" class="ms-2" alt="whatsapp">
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="ask-btn-wrap">
+                                <a href="#" class="w-100 ask-btn default-btn">Задать вопрос</a>
+                            </div>
+                            <div class="processing-consent mt-4">
+                                <p class="mb-0">
+                                    Нажимая на кнопку “Задать вопрос”, вы даете согласие на 
+                                    <a href="#">обработку персональных данных</a>
+                                    и соглашаетесь c <a href="#">политикой конфиденциальности</a>
+                                </p>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid d-md-none mt-5 mt-sm-3 pb-sm-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="soc-networks">
+                        <span>Мои каналы в соцсетях:</span>
+                        <div class="soc-icons">
+                            <div class="soc-icon-wrap">
+                                <a href="https://instagram.com/smmshvedov?igshid=MzRlODBiNWFlZA==">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 6C19.1112 6 18.4992 6.0204 16.5792 6.108C14.6628 6.1956 13.3536 6.5004 12.2088 6.9456C11.0088 7.3968 9.9204 8.1048 9.0204 9.0216C8.10507 9.92056 7.39663 11.0082 6.9444 12.2088C6.5016 13.3536 6.1956 14.664 6.108 16.5804C6.0216 18.4992 6 19.11 6 24C6 28.89 6.0204 29.5008 6.108 31.4208C6.1956 33.3372 6.5004 34.6464 6.9456 35.7912C7.3968 36.9912 8.1048 38.0796 9.0216 38.9796C9.92058 39.8949 11.0082 40.6033 12.2088 41.0556C13.3536 41.4996 14.6628 41.8044 16.5792 41.892C18.4992 41.9796 19.1112 42 24 42C28.8888 42 29.5008 41.9796 31.4208 41.892C33.3372 41.8044 34.6464 41.4996 35.7912 41.0544C36.9912 40.6032 38.0796 39.8952 38.9796 38.9784C39.8949 38.0794 40.6034 36.9918 41.0556 35.7912C41.4996 34.6464 41.8044 33.3372 41.892 31.4208C41.9796 29.5008 42 28.8888 42 24C42 19.1112 41.9796 18.4992 41.892 16.5792C41.8044 14.6628 41.4996 13.3536 41.0544 12.2088C40.6025 11.0077 39.894 9.91959 38.9784 9.0204C38.0794 8.10507 36.9918 7.39663 35.7912 6.9444C34.6464 6.5016 33.336 6.1956 31.4196 6.108C29.5008 6.0216 28.89 6 24 6ZM24 9.2436C28.806 9.2436 29.376 9.2616 31.2744 9.348C33.0288 9.4284 33.9816 9.72 34.6164 9.9684C35.4564 10.2936 36.0564 10.6848 36.6864 11.3136C37.3164 11.9436 37.7064 12.5436 38.0316 13.3836C38.2788 14.0184 38.5716 14.9712 38.652 16.7256C38.7384 18.624 38.7564 19.194 38.7564 24C38.7564 28.806 38.7384 29.376 38.652 31.2744C38.5716 33.0288 38.28 33.9816 38.0316 34.6164C37.7435 35.3983 37.2839 36.1056 36.6864 36.6864C36.1057 37.284 35.3983 37.7437 34.6164 38.0316C33.9816 38.2788 33.0288 38.5716 31.2744 38.652C29.376 38.7384 28.8072 38.7564 24 38.7564C19.1928 38.7564 18.624 38.7384 16.7256 38.652C14.9712 38.5716 14.0184 38.28 13.3836 38.0316C12.6017 37.7435 11.8944 37.2839 11.3136 36.6864C10.7162 36.1055 10.2566 35.3982 9.9684 34.6164C9.7212 33.9816 9.4284 33.0288 9.348 31.2744C9.2616 29.376 9.2436 28.806 9.2436 24C9.2436 19.194 9.2616 18.624 9.348 16.7256C9.4284 14.9712 9.72 14.0184 9.9684 13.3836C10.2936 12.5436 10.6848 11.9436 11.3136 11.3136C11.8943 10.7161 12.6017 10.2564 13.3836 9.9684C14.0184 9.7212 14.9712 9.4284 16.7256 9.348C18.624 9.2616 19.194 9.2436 24 9.2436Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M24 30.006C23.2113 30.006 22.4303 29.8507 21.7016 29.5488C20.973 29.247 20.3109 28.8046 19.7532 28.2469C19.1955 27.6892 18.7531 27.0271 18.4512 26.2984C18.1494 25.5697 17.994 24.7887 17.994 24C17.994 23.2113 18.1494 22.4303 18.4512 21.7016C18.7531 20.9729 19.1955 20.3108 19.7532 19.7531C20.3109 19.1954 20.973 18.753 21.7016 18.4512C22.4303 18.1494 23.2113 17.994 24 17.994C25.5929 17.994 27.1206 18.6268 28.2469 19.7531C29.3733 20.8795 30.006 22.4071 30.006 24C30.006 25.5929 29.3733 27.1205 28.2469 28.2469C27.1206 29.3732 25.5929 30.006 24 30.006ZM24 14.748C21.5463 14.748 19.193 15.7228 17.4579 17.4579C15.7228 19.1929 14.748 21.5462 14.748 24C14.748 26.4538 15.7228 28.8071 17.4579 30.5422C19.193 32.2772 21.5463 33.252 24 33.252C26.4538 33.252 28.8071 32.2772 30.5422 30.5422C32.2773 28.8071 33.252 26.4538 33.252 24C33.252 21.5462 32.2773 19.1929 30.5422 17.4579C28.8071 15.7228 26.4538 14.748 24 14.748ZM35.9436 14.58C35.9436 15.16 35.7132 15.7163 35.3031 16.1264C34.8929 16.5366 34.3367 16.767 33.7566 16.767C33.1766 16.767 32.6203 16.5366 32.2102 16.1264C31.8001 15.7163 31.5696 15.16 31.5696 14.58C31.5696 14 31.8001 13.4437 32.2102 13.0336C32.6203 12.6234 33.1766 12.393 33.7566 12.393C34.3367 12.393 34.8929 12.6234 35.3031 13.0336C35.7132 13.4437 35.9436 14 35.9436 14.58Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="soc-icon-wrap">
+                                <a href="https://t.me/smmshvedov">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M44 24C44 35.0457 35.0457 44 24 44C12.9543 44 4 35.0457 4 24C4 12.9543 12.9543 4 24 4C35.0457 4 44 12.9543 44 24ZM24.7167 18.7649C22.7714 19.574 18.8835 21.2487 13.0531 23.7889C12.1064 24.1654 11.6104 24.5337 11.5652 24.8939C11.4889 25.5025 12.2512 25.7422 13.2891 26.0686C13.4303 26.113 13.5766 26.159 13.7265 26.2077C14.7477 26.5397 16.1213 26.928 16.8354 26.9434C17.4832 26.9574 18.2062 26.6904 19.0044 26.1423C24.4519 22.465 27.2639 20.6064 27.4405 20.5663C27.565 20.538 27.7376 20.5025 27.8546 20.6064C27.9715 20.7104 27.96 20.9072 27.9476 20.96C27.8721 21.2819 24.8802 24.0635 23.3318 25.503C22.8491 25.9517 22.5068 26.2701 22.4368 26.3428C22.28 26.5056 22.1202 26.6597 21.9666 26.8077C21.0179 27.7222 20.3065 28.4081 22.006 29.528C22.8227 30.0662 23.4762 30.5113 24.1282 30.9553C24.8402 31.4402 25.5504 31.9238 26.4693 32.5261C26.7034 32.6796 26.927 32.839 27.1448 32.9942C27.9734 33.585 28.7179 34.1157 29.6376 34.0311C30.172 33.9819 30.7241 33.4794 31.0044 31.9806C31.667 28.4386 32.9693 20.7641 33.2703 17.6016C33.2967 17.3246 33.2635 16.97 33.2369 16.8143C33.2102 16.6586 33.1546 16.4369 32.9522 16.2727C32.7126 16.0782 32.3427 16.0372 32.1772 16.0402C31.425 16.0534 30.2709 16.4547 24.7167 18.7649Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="soc-icon-wrap">
+                                <a href="https://www.youtube.com/channel/UCVnht6CUJ41q6-OaOrCgudg">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <path fill-rule="evenodd" clip-rule="evenodd" d="M39.5841 10.8294C41.3042 11.2915 42.665 12.6523 43.1271 14.3724C43.9743 17.5046 44 24.0001 44 24.0001C44 24.0001 44 30.5213 43.1528 33.6279C42.6906 35.348 41.3299 36.7087 39.6098 37.1709C36.5032 38.0181 24 38.0181 24 38.0181C24 38.0181 11.4968 38.0181 8.39025 37.1709C6.67009 36.7087 5.30937 35.348 4.84724 33.6279C4 30.4957 4 24.0001 4 24.0001C4 24.0001 4 17.5046 4.82157 14.3981C5.2837 12.6779 6.64442 11.3172 8.36457 10.8551C11.4711 10.0078 23.9743 9.98218 23.9743 9.98218C23.9743 9.98218 36.4775 9.98218 39.5841 10.8294ZM30.3671 24.0002L19.9949 30.0079V17.9925L30.3671 24.0002Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                            <div class="soc-icon-wrap">
+                                <a href="https://www.tiktok.com/@smmshvedov?_t=8gL993ZJ6av">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="soc-icon" width="48" height="48" viewBox="0 0 48 48" fill="none">
+                                        <path d="M36.2308 12.0179C34.0762 10.613 32.521 8.36524 32.0359 5.74493C31.9311 5.17879 31.8735 4.59614 31.8735 4H24.9967L24.9857 31.5599C24.8701 34.6461 22.33 37.1232 19.2161 37.1232C18.2483 37.1232 17.337 36.8812 16.5346 36.459C14.6946 35.4907 13.4354 33.562 13.4354 31.3426C13.4354 28.155 16.0287 25.5617 19.2161 25.5617C19.8111 25.5617 20.3818 25.6598 20.9217 25.829V18.8085C20.363 18.7324 19.7953 18.6848 19.2161 18.6848C12.2366 18.6848 6.55859 24.3631 6.55859 31.3426C6.55859 35.6248 8.6981 39.4144 11.9622 41.7059C14.0181 43.1493 16.519 44 19.2161 44C26.1955 44 31.8735 38.3221 31.8735 31.3426V17.3673C34.5707 19.3032 37.8752 20.444 41.4409 20.444V13.5672C39.5202 13.5672 37.7312 12.9962 36.2308 12.0179Z" fill="#F1FFD2" fill-opacity="0.4"></path>
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer pt-1 pt-md-0 pt-lg-4 pb-2 pb-md-2">
+        <hr class="my-0 d-none d-md-block">
+        <div class="container pt-3 pt-md-4 pb-3">
+            <div class="row justify-content-between pt-2">
+                <div class="col-12 col-md-auto pb-1">
+                    <div class="privacy-policy pb-4 d-sm-none">
+                        <a href="#" class="text-decoration-none">Политика конфиденциальности</a>
+                    </div>
+                    <div class="copyright pb-1">
+                        <span>Copyright © 2023 <b>#shvedovsmm</b></span>
+                    </div>
+                </div>
+                <div class="col-12 d-md-none">
+                    <hr>
+                </div>
+                <div class="col-12 col-md-auto">
+                    <div class="made-with">
+                        <span class="pt-1 pe-2">Site made by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="78" height="16" viewBox="0 0 78 16" fill="none">
+                            <g clip-path="url(#clip0_98_870)">
+                              <mask id="mask0_98_870" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="78" height="16">
+                                <path d="M77.4758 0H0.523438V16H77.4758V0Z" fill="white"/>
+                              </mask>
+                              <g mask="url(#mask0_98_870)">
+                                <path d="M27.8121 8.00266C26.87 9.08175 24.1192 11.7407 22.8616 12.3874C22.3788 12.6369 21.822 12.8512 21.31 12.6776C19.1025 11.9237 20.6463 9.16305 21.4755 7.80495C22.1355 6.72397 23.0466 5.85366 23.8116 4.854C24.5456 3.895 25.4936 1.89569 24.0627 1.06788C23.578 0.787023 22.9609 0.866474 22.4645 1.12516C21.97 1.38385 21.5709 1.80145 21.1796 2.20982C18.719 4.7727 16.1862 7.25982 13.5835 9.66933C13.1455 10.0759 12.7036 10.4787 12.2617 10.8815C12.0514 11.0718 11.3253 11.9588 10.9963 11.7629C10.9009 11.7056 10.8697 11.5707 10.897 11.4599C10.9768 11.1346 11.3389 10.8223 11.5375 10.571C11.7984 10.2421 12.0534 9.90956 12.3045 9.57326C12.8067 8.90065 13.2915 8.21325 13.7568 7.51297C14.6873 6.11235 15.5439 4.65814 16.3206 3.15774C16.3751 3.05241 16.4296 2.94708 16.4822 2.84176C16.7956 2.2246 17.1012 1.49473 16.8364 0.851693C16.5814 0.234531 15.8572 -0.0574198 15.2149 0.014644C14.5724 0.086708 13.9942 0.448874 13.4628 0.829522C10.1514 3.19838 7.68295 6.6131 4.62853 9.32564C4.38908 9.53813 4.06982 9.76358 3.74082 9.76541C3.13538 9.76914 3.12176 9.06141 3.24829 8.61798C3.9608 6.14376 6.51686 4.76346 7.76471 2.52948C7.86205 2.35394 7.95354 2.16916 7.96717 1.96591C8.00026 1.45962 7.52721 1.05125 7.04637 0.953324C6.18591 0.777781 5.31378 1.31549 4.78037 2.03613C4.3151 2.66622 4.06982 3.40718 3.79143 4.13706C3.05557 6.06985 2.10166 7.90103 1.35802 9.83009C0.902481 11.0626 0.567643 12.369 0.536495 13.6957C0.524815 14.2168 0.468359 15.0667 0.733115 15.5287C0.984243 15.9685 1.56048 16.1052 1.99849 15.9204C2.62339 15.6581 3.0361 14.9485 3.42544 14.4126C3.87904 13.7918 4.32289 13.1635 4.76869 12.5352C5.65835 11.277 6.54411 10.0149 7.47465 8.78979C9.1761 6.55212 11.0586 4.42346 13.3343 2.80111C13.4375 2.7272 13.566 2.65144 13.6809 2.70503C13.858 2.78633 13.8093 3.0561 13.7315 3.23904C12.1176 6.98266 9.60635 10.2828 8.24559 14.1336C8.07229 14.6251 7.93018 15.2201 8.23584 15.6359C8.52589 16.0331 9.11576 16.0701 9.54989 15.8558C9.98395 15.6433 10.2994 15.2405 10.6031 14.8561C13.7315 10.887 17.2083 7.21363 20.9753 3.89315C21.1836 3.71022 21.5106 3.52914 21.6995 3.73425C20.1888 7.1508 17.4458 10.0315 16.7936 13.7271C16.6807 14.3701 16.6632 15.1166 17.1052 15.5841C17.3835 15.8779 17.7553 15.9777 18.1505 15.9629C18.5924 15.9445 19.0655 15.7818 19.4684 15.5841C21.896 14.3923 25.8829 11.0977 27.8102 9.15748V7.99893L27.8121 8.00266Z" fill="#B8FF20"/>
+                                <path d="M43.0203 8.91214V1.10156H36.3119L27.8125 9.254V12.2142H39.1736V16.0021H43.0184V12.2142H43.8613L46.941 8.91031H43.0184L43.0203 8.91214ZM33.4035 8.91214L39.1307 3.43901V8.91214H33.4035Z" fill="#B8FF20"/>
+                                <path d="M53.3104 8.36535L60.5483 1.07031H54.7042L47.1022 8.91049H52.7244L46.1094 16.0023H51.7978L59.0824 8.30257L53.3104 8.36535Z" fill="#B8FF20"/>
+                                <path d="M75.7892 7.10872C74.666 6.33634 72.9041 5.95016 70.5057 5.95016H66.7116L71.2163 1.10156H66.4059L59.8824 7.70373C59.0785 8.51676 58.6015 9.58289 58.5938 10.6971C58.5938 10.7064 58.5938 10.7174 58.5938 10.7267V10.8265C58.5938 14.2763 60.959 16.0022 65.6896 16.0022H70.5038C75.1487 16.0022 77.4728 14.2763 77.4728 10.8265V10.7267C77.4728 9.08773 76.9128 7.88293 75.7892 7.11057V7.10872ZM73.1163 10.7655C73.1163 11.9389 72.2598 12.5246 70.5486 12.5246H65.5455C63.8187 12.5246 62.9563 11.9389 62.9563 10.7655V10.6657C62.9563 9.54594 63.8187 8.98792 65.5455 8.98792H70.5486C72.2617 8.98792 73.1163 9.54776 73.1163 10.6657V10.7655Z" fill="#B8FF20"/>
+                                <path d="M74.8966 3.79435C75.8663 3.79435 76.6525 3.04814 76.6525 2.12764C76.6525 1.20715 75.8663 0.460938 74.8966 0.460938C73.9268 0.460938 73.1406 1.20715 73.1406 2.12764C73.1406 3.04814 73.9268 3.79435 74.8966 3.79435Z" fill="#B8FF20"/>
+                              </g>
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_98_870">
+                                <rect width="76.9524" height="16" fill="white" transform="translate(0.523438)"/>
+                              </clipPath>
+                            </defs>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="tariffModal" class="modal">
+        <div class="modal-content">
+          <span class="close"></span>
+          <div class="modal-header text-center border-0 pt-1">
+            <p class="h5 w-100">Выбор тарифа</p>
+          </div>
+          <div class="modal-body">
+            <form action="" class="container-fluid modal-form">
+                
+                <div class="row mb-4">
+                    <div class="col-12">
+                        <label for="modalTariff" class="pb-3 w-100">Тариф:</label>
+                    </div>
+                    <div class="col-12 mb-4">
+                        <input type="text" class="modal-tariff w-100" id="modalTariff"  placeholder="Тариф">
+                    </div>
+                    <div class="col-12 mb-4">
+                        <input type="text" class="name w-100 ps-lg-2" id="modalClientName" placeholder="Ваше имя">
+                    </div>
+                    <div class="col-12">
+                        <input type="text" class="phone w-100" id="modalClientPhone" placeholder="+7 (999) 999 99 99">
+                    </div>
+                </div>
+                
+                <div class="radio-wrap align-items-center mt-2 mb-4 pt-3 pb-2">
+                    <div class="row">
+                        <div class="col-12 mb-3">
+                            <span class="text-white">Где вам было бы удобнее связаться?</span>
+                        </div>
+                        <div class="col-12 d-flex justify-content-between radio-label-wrap mt-4 mt-xl-0">
+                            <div class="form-radio-btn ps-3 ps-md-1 ps-xl-0 ms-1 ms-md-3 ms-xl-0 pb-xl-1">
+                                <input id="radio-modal-1" type="radio" name="radio" value="1" checked>
+                                <label for="radio-modal-1" class="justify-content-start">
+                                    Telegram
+                                    <img src="img/telegram-green.svg" class="ms-2" alt="telegram">
+                                </label>
+                            </div>
+                            <div class="form-radio-btn pe-3 pe-md-1 pe-xl-0 me-1 me-md-3 me-xl-0 pb-xl-1">
+                                <input id="radio-modal-2" type="radio" name="radio" value="2">
+                                <label for="radio-modal-2" class="justify-content-end">
+                                    WhatsApp
+                                    <img src="img/whatsapp-green.svg" class="ms-2" alt="whatsapp">
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="budget-btn-wrap">   
+                    <a href="#" class="budget-btn default-btn w-100 px-5">Отправить заявку</a>
+                </div>
+                <div class="processing-consent mt-4">
+                    <p class="mb-0 sz-xs">
+                        Нажимая на кнопку “Отправить заявку”, вы даете согласие на 
+                        <a href="#">обработку персональных данных</a>
+                        и 
+                        <span class="nowrap">
+                            соглашаетесь c <a href="#">политикой конфиденциальности</a>
+                        </span>
+                    </p>
+                </div>
+
+            </form>
+          </div>
+        </div>
+    </div>
+
+
+    <!-- Скрипты -->
+    <script src="js/aos.js"></script>
+
+    <script src="js/aosInitial.js"></script>
+
+    <script src="js/headerMenuScript.js"></script>
+
+    <script src="js/toggleButtonsScripts.js"></script>
+
+    <script src="js/splide.js"></script>
+
+    <script src="js/initialTrueCasesSlider.js"></script>
+
+    <script src="js/initialSliderInterviews.js"></script>
+
+    <script src="js/tariffTabs.js"></script>
+
+    <script src="js/placeholderWithTyping.js"></script>
+
+    <!-- СКРИПТ ДЛЯ КАСТОМНОГО СЕЛЕКТА -->
+    <!-- <script src="js/customSelectScript.js"></script> -->
+    <!-- /СКРИПТ ДЛЯ КАСТОМНОГО СЕЛЕКТА -->
+
+</body>
+</html>
