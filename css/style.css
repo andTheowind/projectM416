@@ -351,7 +351,7 @@ input:focus-visible {
 }
 
 .top-section {
-    background-image: url("../img/FW_schwrz_22.jpg");
+    background-image: url("../img/FW_schwrz_22-min.webp");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 50%;
@@ -1262,7 +1262,7 @@ input:focus-visible {
 .performance-budget {
     padding-top: 130px;
     padding-bottom: 130px;
-    background-image: url("../img/FWschwrz22.png");
+    background-image: url("../img/FWschwrz22-min.webp");
     background-size: cover;
     background-position: 50% 50%;
     background-color: #0A0A0A;
@@ -2237,7 +2237,7 @@ input:focus-visible {
         top: 0;
         width: 100%;
         height: 61%;
-        background-image: url("../img/DSC0874.png");
+        background-image: url("../img/DSC0874-min.png");
     }
     .about-me:before {
         left: 30%;
