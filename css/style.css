@@ -1741,7 +1741,7 @@ input:focus-visible {
 }
 
 .footer .made-with {
-
+    display: flex;
 }
 
 .modal#tariffModal {
