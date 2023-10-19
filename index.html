@@ -837,24 +837,24 @@
                             для получения желаемого результата и сколько будут стоить 
                             <span class="nowrap">мои услуги.</span>
                         </p>
-                        <form action="" class="budget-form">
+                        <form action="send.php" method="post"  class="budget-form" id="budgetForm">
                             <div class="d-flex selects-control">
                                 <div class="me-lg-2">
                                     <label for="service" class="pb-2">Какую услугу Вы планируете продвигать?</label>
-                                    <input type="text" class="service" id="budgetService"  placeholder="Выбрать">
+                                    <input type="text" class="service" id="budgetService"  placeholder="Таргет" id="budgetService" name="budgetService">
                                 </div>
                                 <div class="ms-lg-2">
                                     <label for="amount" class="pb-2">Сколько клиентов в месяц хотите привлекать?</label>
-                                    <input type="text" class="amount" id="budgetAmount" placeholder="Выбрать">
+                                    <input type="text" class="amount" id="budgetAmount" placeholder="100" id="budgetAmount" name="budgetAmount">
                                 </div>
                             </div>
                             <div class="mt-4">
                                 <label for="city" class="pb-2">Из какого вы города?</label>
-                                <input type="text" class="name" id="budgetCity" placeholder="Выбрать">
+                                <input type="text" id="budgetCity" placeholder="Москва" id="budgetCity" name="budgetCity">
                             </div>
                             <div class="d-flex flex-column flex-sm-row mt-4">
-                                <input type="text" class="name me-lg-2 mb-4 mb-sm-0" placeholder="Ваше имя">
-                                <input type="text" class="phone ms-lg-2" placeholder="+7 (999) 999 99 99">
+                                <input type="text" class="name me-lg-2 mb-4 mb-sm-0" placeholder="Ваше имя" id="budgetName" name="budgetName">
+                                <input type="text" class="phone ms-lg-2" placeholder="+7 (999) 999 99 99" id="budgetPhone" name="budgetPhone">
                             </div>
                             <div class="radio-wrap row align-items-center mt-2 mb-2 pt-3">
                                 <div class="col-12 col-xl-7 col-xxl-6">
@@ -862,14 +862,14 @@
                                 </div>
                                 <div class="col-12 col-xl-5 col-xxl-6  d-flex justify-content-between justify-content-xl-end radio-label-wrap mt-4 mt-xl-0">
                                     <div class="form-radio-btn ps-3 ps-md-1 ps-xl-0 ms-1 ms-md-3 ms-xl-0 pb-xl-1">
-                                        <input id="radio-budget-1" type="radio" name="radio" value="1" checked>
+                                        <input id="radio-budget-1" type="radio" name="radio" value="Telegram" checked>
                                         <label for="radio-budget-1">
                                             Telegram
                                             <img src="img/telegram-green.svg" class="ms-2" alt="telegram">
                                         </label>
                                     </div>
                                     <div class="form-radio-btn pe-3 pe-md-1 pe-xl-0 me-1 me-md-3 me-xl-0 pb-xl-1">
-                                        <input id="radio-budget-2" type="radio" name="radio" value="2">
+                                        <input id="radio-budget-2" type="radio" name="radio" value="WhatsApp">
                                         <label for="radio-budget-2">
                                             WhatsApp
                                             <img src="img/whatsapp-green.svg" class="ms-2" alt="whatsapp">
@@ -878,7 +878,7 @@
                                 </div>
                             </div>
                             <div class="budget-btn-wrap">   
-                                <a href="#" class="budget-btn default-btn px-5">Отправить заявку</a>
+                                <button class="budget-btn default-btn px-5">Отправить заявку</button>
                             </div>
                             <div class="processing-consent mt-4">
                                 <p class="mb-0">
@@ -1408,13 +1408,13 @@
                         <li class="list-group-item row">
                             <span class="col-3 col-lg-4 col-xxl-auto border-0 me-2 me-xl-4"></span>
                             <div class="col d-flex align-items-center border-0 mx-2 mx-xl-4">
-                                <button href="#" class="tariff-btn default-btn modal-standart-btn" id="myBtn">Выбрать</button>
+                                <button class="tariff-btn default-btn modal-standart-btn" id="myBtn">Выбрать</button>
                             </div>
                             <div class="col d-flex align-items-center border-0 mx-2 mx-xl-4">
-                                <button href="#" class="tariff-btn default-btn modal-optimum-btn">Выбрать</button>
+                                <button class="tariff-btn default-btn modal-optimum-btn">Выбрать</button>
                             </div>
                             <div class="col d-flex align-items-center border-0 ms-2 ms-xl-4">
-                                <button href="#" class="tariff-btn default-btn modal-maximum-btn">Выбрать</button>
+                                <button class="tariff-btn default-btn modal-maximum-btn">Выбрать</button>
                             </div>
                         </li>
                     </ul>
@@ -1445,16 +1445,16 @@
                 </div>
                 <div class="col-12 col-lg-5 col-xl-6 mt-4 mt-lg-0">
                     <div class="ticket-form-wrap">
-                        <form action="" class="ticket-form">
+                        <form action="send.php" method="post" class="ticket-form" id="ticketForm">
                             <div>
-                                <input type="text" class="name w-100" id="ticketClientName" placeholder="Ваше имя">
+                                <input type="text" class="name w-100" id="ticketClientName" name="ticketClientName" placeholder="Ваше имя">
                             </div>
                             <div class="mt-4">
                                 <label for="">Ваша страна</label>
-                                <input type="text" class="name w-100" placeholder="Выбрать">
+                                <input type="text" class="name w-100" id="ticketClientCountry" name="ticketClientCountry" placeholder="Россия">
                             </div>
                             <div class="mt-4">
-                                <input type="text" class="phone w-100" placeholder="+7 (999) 999 99 99">
+                                <input type="text" class="phone w-100" id="ticketClientPhone" name="ticketClientPhone" placeholder="+7 (999) 999 99 99">
                             </div>
                             <div class="radio-wrap align-items-center mb-4 mt-4 row">
                                 <div class="col-12 col-xl-5 col-xxl-5">
@@ -1462,14 +1462,14 @@
                                 </div>
                                 <div class="col-12 col-xl-7 col-xxl-6  d-flex justify-content-between justify-content-xl-end radio-label-wrap mt-4 mt-xl-0">
                                     <div class="form-radio-btn ps-3 ps-md-1 ps-xl-0 ms-1 ms-md-3 ms-xl-0 ">
-                                        <input id="radio-ticket-1" type="radio" name="radio" value="1" checked>
+                                        <input id="radio-ticket-1" type="radio" name="radio" value="telegram" checked>
                                         <label for="radio-ticket-1">
                                             Telegram
                                             <img src="img/telegram-green.svg" class="ms-2" alt="telegram">
                                         </label>
                                     </div>
                                     <div class="form-radio-btn pe-3 pe-md-1 pe-xl-0 me-1 me-md-3 me-xl-0">
-                                        <input id="radio-ticket-2" type="radio" name="radio" value="2">
+                                        <input id="radio-ticket-2" type="radio" name="radio" value="whatsapp">
                                         <label for="radio-ticket-2">
                                             WhatsApp
                                             <img src="img/whatsapp-green.svg" class="ms-2" alt="whatsapp">
@@ -1477,7 +1477,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <a href="#" class="default-btn w-100">Отправить заявку</a>
+                            <button class="default-btn w-100">Отправить заявку</button>
                             <div class="processing-consent mt-4">
                                 <p class="mb-0">
                                     Нажимая на кнопку “Отправить заявку”, вы даете согласие на 
@@ -1520,7 +1520,7 @@
                                     </div>
                                     <div class="cta-wtsp">
                                         <div class="me-2">
-                                            <a href="#" class="text-decoration-none">
+                                            <a href="https://wa.me/79397914034" class="text-decoration-none">
                                                 <span><b class="d-none d-md-inline">Написать в </b>WhatsApp</span>
                                             </a>
                                         </div>  
@@ -1571,28 +1571,33 @@
 
                     </div>
                 </div>
-                <!-- <div class="col-6 d-flex justify-content-end"> -->
                 <div class="col-12 col-lg-5 col-xl-6" data-aos="fade-left" data-aos-delay="350">
                     <div class="quiestions-form-wrap">
-                        <form action="">
-                            <input type="text" name="quiestions-name" class="w-100 mb-4" placeholder="Ваше имя">
-                            <input type="text" name="quiestions-form" class="w-100 mb-4" placeholder="+7 (999) 999 99 99">
+                        <form action="send.php" method="post" id="mainQuiestionsForm" >
+                            <input type="text" name="quiestionClientName" class="w-100 mb-4" placeholder="Ваше имя">
+                            <input type="text" name="quiestionClientPhone" class="w-100 mb-4" placeholder="+7 (999) 999 99 99">
                             <label for="question" class="mb-2">Ваш вопрос</label>
-                            <textarea name="question" class="mb-4" id="question" cols="30" rows="4" placeholder="Введите текст..."></textarea>
+                            <textarea name="questionText" 
+                                      class="mb-4" 
+                                      id="question" 
+                                      cols="30" 
+                                      rows="4" 
+                                      placeholder="Введите текст..."
+                            ></textarea>
                             <div class="radio-wrap align-items-center mb-4 row">
                                 <div class="col-12 col-xl-5 col-xxl-5">
                                     <span class="text-white">Где вам было бы удобнее связаться?</span>
                                 </div>
                                 <div class="col-12 col-xl-7 col-xxl-6  d-flex justify-content-between justify-content-xl-end radio-label-wrap mt-4 mt-xl-0">
                                     <div class="form-radio-btn ps-3 ps-md-1 ps-xl-0 ms-1 ms-md-3 ms-xl-0 ">
-                                        <input id="radio-contact-1" type="radio" name="radio" value="1" checked>
+                                        <input id="radio-contact-1" type="radio" name="radio" value="telegram" checked>
                                         <label for="radio-contact-1">
                                             Telegram
                                             <img src="img/telegram-green.svg" class="ms-2" alt="telegram">
                                         </label>
                                     </div>
                                     <div class="form-radio-btn pe-3 pe-md-1 pe-xl-0 me-1 me-md-3 me-xl-0">
-                                        <input id="radio-contact-2" type="radio" name="radio" value="2">
+                                        <input id="radio-contact-2" type="radio" name="radio" value="whatsapp">
                                         <label for="radio-contact-2">
                                             WhatsApp
                                             <img src="img/whatsapp-green.svg" class="ms-2" alt="whatsapp">
@@ -1601,7 +1606,7 @@
                                 </div>
                             </div>
                             <div class="ask-btn-wrap">
-                                <a href="#" class="w-100 ask-btn default-btn">Задать вопрос</a>
+                                <button class="w-100 ask-btn default-btn">Задать вопрос</button>
                             </div>
                             <div class="processing-consent mt-4">
                                 <p class="mb-0">
@@ -1666,7 +1671,9 @@
                         <a href="#" class="text-decoration-none">Политика конфиденциальности</a>
                     </div>
                     <div class="copyright pb-1">
-                        <span>Copyright © 2023 <b>#shvedovsmm</b></span>
+                        <span>
+                            Copyright © 2023  <b>#shvedovsmm</b>
+                        </span>
                     </div>
                 </div>
                 <div class="col-12 d-md-none">
@@ -1676,25 +1683,27 @@
                     <div class="made-with justify-content-center justify-content-sm-start justify-content-xl-end">
                         <span class="pt-1 pe-2">Site made by</span>
                         <div class="made-with-img pb-3">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="78" height="16" viewBox="0 0 78 16" fill="none">
-                                <g clip-path="url(#clip0_98_870)">
-                                <mask id="mask0_98_870" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="78" height="16">
-                                    <path d="M77.4758 0H0.523438V16H77.4758V0Z" fill="white"/>
-                                </mask>
-                                <g mask="url(#mask0_98_870)">
-                                    <path d="M27.8121 8.00266C26.87 9.08175 24.1192 11.7407 22.8616 12.3874C22.3788 12.6369 21.822 12.8512 21.31 12.6776C19.1025 11.9237 20.6463 9.16305 21.4755 7.80495C22.1355 6.72397 23.0466 5.85366 23.8116 4.854C24.5456 3.895 25.4936 1.89569 24.0627 1.06788C23.578 0.787023 22.9609 0.866474 22.4645 1.12516C21.97 1.38385 21.5709 1.80145 21.1796 2.20982C18.719 4.7727 16.1862 7.25982 13.5835 9.66933C13.1455 10.0759 12.7036 10.4787 12.2617 10.8815C12.0514 11.0718 11.3253 11.9588 10.9963 11.7629C10.9009 11.7056 10.8697 11.5707 10.897 11.4599C10.9768 11.1346 11.3389 10.8223 11.5375 10.571C11.7984 10.2421 12.0534 9.90956 12.3045 9.57326C12.8067 8.90065 13.2915 8.21325 13.7568 7.51297C14.6873 6.11235 15.5439 4.65814 16.3206 3.15774C16.3751 3.05241 16.4296 2.94708 16.4822 2.84176C16.7956 2.2246 17.1012 1.49473 16.8364 0.851693C16.5814 0.234531 15.8572 -0.0574198 15.2149 0.014644C14.5724 0.086708 13.9942 0.448874 13.4628 0.829522C10.1514 3.19838 7.68295 6.6131 4.62853 9.32564C4.38908 9.53813 4.06982 9.76358 3.74082 9.76541C3.13538 9.76914 3.12176 9.06141 3.24829 8.61798C3.9608 6.14376 6.51686 4.76346 7.76471 2.52948C7.86205 2.35394 7.95354 2.16916 7.96717 1.96591C8.00026 1.45962 7.52721 1.05125 7.04637 0.953324C6.18591 0.777781 5.31378 1.31549 4.78037 2.03613C4.3151 2.66622 4.06982 3.40718 3.79143 4.13706C3.05557 6.06985 2.10166 7.90103 1.35802 9.83009C0.902481 11.0626 0.567643 12.369 0.536495 13.6957C0.524815 14.2168 0.468359 15.0667 0.733115 15.5287C0.984243 15.9685 1.56048 16.1052 1.99849 15.9204C2.62339 15.6581 3.0361 14.9485 3.42544 14.4126C3.87904 13.7918 4.32289 13.1635 4.76869 12.5352C5.65835 11.277 6.54411 10.0149 7.47465 8.78979C9.1761 6.55212 11.0586 4.42346 13.3343 2.80111C13.4375 2.7272 13.566 2.65144 13.6809 2.70503C13.858 2.78633 13.8093 3.0561 13.7315 3.23904C12.1176 6.98266 9.60635 10.2828 8.24559 14.1336C8.07229 14.6251 7.93018 15.2201 8.23584 15.6359C8.52589 16.0331 9.11576 16.0701 9.54989 15.8558C9.98395 15.6433 10.2994 15.2405 10.6031 14.8561C13.7315 10.887 17.2083 7.21363 20.9753 3.89315C21.1836 3.71022 21.5106 3.52914 21.6995 3.73425C20.1888 7.1508 17.4458 10.0315 16.7936 13.7271C16.6807 14.3701 16.6632 15.1166 17.1052 15.5841C17.3835 15.8779 17.7553 15.9777 18.1505 15.9629C18.5924 15.9445 19.0655 15.7818 19.4684 15.5841C21.896 14.3923 25.8829 11.0977 27.8102 9.15748V7.99893L27.8121 8.00266Z" fill="#B8FF20"/>
-                                    <path d="M43.0203 8.91214V1.10156H36.3119L27.8125 9.254V12.2142H39.1736V16.0021H43.0184V12.2142H43.8613L46.941 8.91031H43.0184L43.0203 8.91214ZM33.4035 8.91214L39.1307 3.43901V8.91214H33.4035Z" fill="#B8FF20"/>
-                                    <path d="M53.3104 8.36535L60.5483 1.07031H54.7042L47.1022 8.91049H52.7244L46.1094 16.0023H51.7978L59.0824 8.30257L53.3104 8.36535Z" fill="#B8FF20"/>
-                                    <path d="M75.7892 7.10872C74.666 6.33634 72.9041 5.95016 70.5057 5.95016H66.7116L71.2163 1.10156H66.4059L59.8824 7.70373C59.0785 8.51676 58.6015 9.58289 58.5938 10.6971C58.5938 10.7064 58.5938 10.7174 58.5938 10.7267V10.8265C58.5938 14.2763 60.959 16.0022 65.6896 16.0022H70.5038C75.1487 16.0022 77.4728 14.2763 77.4728 10.8265V10.7267C77.4728 9.08773 76.9128 7.88293 75.7892 7.11057V7.10872ZM73.1163 10.7655C73.1163 11.9389 72.2598 12.5246 70.5486 12.5246H65.5455C63.8187 12.5246 62.9563 11.9389 62.9563 10.7655V10.6657C62.9563 9.54594 63.8187 8.98792 65.5455 8.98792H70.5486C72.2617 8.98792 73.1163 9.54776 73.1163 10.6657V10.7655Z" fill="#B8FF20"/>
-                                    <path d="M74.8966 3.79435C75.8663 3.79435 76.6525 3.04814 76.6525 2.12764C76.6525 1.20715 75.8663 0.460938 74.8966 0.460938C73.9268 0.460938 73.1406 1.20715 73.1406 2.12764C73.1406 3.04814 73.9268 3.79435 74.8966 3.79435Z" fill="#B8FF20"/>
-                                </g>
-                                </g>
-                                <defs>
-                                <clipPath id="clip0_98_870">
-                                    <rect width="76.9524" height="16" fill="white" transform="translate(0.523438)"/>
-                                </clipPath>
-                                </defs>
-                            </svg>
+                            <a href="https://studiom416.com/" target="_blank" class="text-decoration-none text-white">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="78" height="16" viewBox="0 0 78 16" fill="none">
+                                    <g clip-path="url(#clip0_98_870)">
+                                    <mask id="mask0_98_870" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="78" height="16">
+                                        <path d="M77.4758 0H0.523438V16H77.4758V0Z" fill="white"/>
+                                    </mask>
+                                    <g mask="url(#mask0_98_870)">
+                                        <path d="M27.8121 8.00266C26.87 9.08175 24.1192 11.7407 22.8616 12.3874C22.3788 12.6369 21.822 12.8512 21.31 12.6776C19.1025 11.9237 20.6463 9.16305 21.4755 7.80495C22.1355 6.72397 23.0466 5.85366 23.8116 4.854C24.5456 3.895 25.4936 1.89569 24.0627 1.06788C23.578 0.787023 22.9609 0.866474 22.4645 1.12516C21.97 1.38385 21.5709 1.80145 21.1796 2.20982C18.719 4.7727 16.1862 7.25982 13.5835 9.66933C13.1455 10.0759 12.7036 10.4787 12.2617 10.8815C12.0514 11.0718 11.3253 11.9588 10.9963 11.7629C10.9009 11.7056 10.8697 11.5707 10.897 11.4599C10.9768 11.1346 11.3389 10.8223 11.5375 10.571C11.7984 10.2421 12.0534 9.90956 12.3045 9.57326C12.8067 8.90065 13.2915 8.21325 13.7568 7.51297C14.6873 6.11235 15.5439 4.65814 16.3206 3.15774C16.3751 3.05241 16.4296 2.94708 16.4822 2.84176C16.7956 2.2246 17.1012 1.49473 16.8364 0.851693C16.5814 0.234531 15.8572 -0.0574198 15.2149 0.014644C14.5724 0.086708 13.9942 0.448874 13.4628 0.829522C10.1514 3.19838 7.68295 6.6131 4.62853 9.32564C4.38908 9.53813 4.06982 9.76358 3.74082 9.76541C3.13538 9.76914 3.12176 9.06141 3.24829 8.61798C3.9608 6.14376 6.51686 4.76346 7.76471 2.52948C7.86205 2.35394 7.95354 2.16916 7.96717 1.96591C8.00026 1.45962 7.52721 1.05125 7.04637 0.953324C6.18591 0.777781 5.31378 1.31549 4.78037 2.03613C4.3151 2.66622 4.06982 3.40718 3.79143 4.13706C3.05557 6.06985 2.10166 7.90103 1.35802 9.83009C0.902481 11.0626 0.567643 12.369 0.536495 13.6957C0.524815 14.2168 0.468359 15.0667 0.733115 15.5287C0.984243 15.9685 1.56048 16.1052 1.99849 15.9204C2.62339 15.6581 3.0361 14.9485 3.42544 14.4126C3.87904 13.7918 4.32289 13.1635 4.76869 12.5352C5.65835 11.277 6.54411 10.0149 7.47465 8.78979C9.1761 6.55212 11.0586 4.42346 13.3343 2.80111C13.4375 2.7272 13.566 2.65144 13.6809 2.70503C13.858 2.78633 13.8093 3.0561 13.7315 3.23904C12.1176 6.98266 9.60635 10.2828 8.24559 14.1336C8.07229 14.6251 7.93018 15.2201 8.23584 15.6359C8.52589 16.0331 9.11576 16.0701 9.54989 15.8558C9.98395 15.6433 10.2994 15.2405 10.6031 14.8561C13.7315 10.887 17.2083 7.21363 20.9753 3.89315C21.1836 3.71022 21.5106 3.52914 21.6995 3.73425C20.1888 7.1508 17.4458 10.0315 16.7936 13.7271C16.6807 14.3701 16.6632 15.1166 17.1052 15.5841C17.3835 15.8779 17.7553 15.9777 18.1505 15.9629C18.5924 15.9445 19.0655 15.7818 19.4684 15.5841C21.896 14.3923 25.8829 11.0977 27.8102 9.15748V7.99893L27.8121 8.00266Z" fill="#B8FF20"/>
+                                        <path d="M43.0203 8.91214V1.10156H36.3119L27.8125 9.254V12.2142H39.1736V16.0021H43.0184V12.2142H43.8613L46.941 8.91031H43.0184L43.0203 8.91214ZM33.4035 8.91214L39.1307 3.43901V8.91214H33.4035Z" fill="#B8FF20"/>
+                                        <path d="M53.3104 8.36535L60.5483 1.07031H54.7042L47.1022 8.91049H52.7244L46.1094 16.0023H51.7978L59.0824 8.30257L53.3104 8.36535Z" fill="#B8FF20"/>
+                                        <path d="M75.7892 7.10872C74.666 6.33634 72.9041 5.95016 70.5057 5.95016H66.7116L71.2163 1.10156H66.4059L59.8824 7.70373C59.0785 8.51676 58.6015 9.58289 58.5938 10.6971C58.5938 10.7064 58.5938 10.7174 58.5938 10.7267V10.8265C58.5938 14.2763 60.959 16.0022 65.6896 16.0022H70.5038C75.1487 16.0022 77.4728 14.2763 77.4728 10.8265V10.7267C77.4728 9.08773 76.9128 7.88293 75.7892 7.11057V7.10872ZM73.1163 10.7655C73.1163 11.9389 72.2598 12.5246 70.5486 12.5246H65.5455C63.8187 12.5246 62.9563 11.9389 62.9563 10.7655V10.6657C62.9563 9.54594 63.8187 8.98792 65.5455 8.98792H70.5486C72.2617 8.98792 73.1163 9.54776 73.1163 10.6657V10.7655Z" fill="#B8FF20"/>
+                                        <path d="M74.8966 3.79435C75.8663 3.79435 76.6525 3.04814 76.6525 2.12764C76.6525 1.20715 75.8663 0.460938 74.8966 0.460938C73.9268 0.460938 73.1406 1.20715 73.1406 2.12764C73.1406 3.04814 73.9268 3.79435 74.8966 3.79435Z" fill="#B8FF20"/>
+                                    </g>
+                                    </g>
+                                    <defs>
+                                    <clipPath id="clip0_98_870">
+                                        <rect width="76.9524" height="16" fill="white" transform="translate(0.523438)"/>
+                                    </clipPath>
+                                    </defs>
+                                </svg>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -1709,23 +1718,22 @@
             <p class="h5 w-100">Выбор тарифа</p>
           </div>
           <div class="modal-body">
-            <form action="" class="container-fluid modal-form">
+            <form action="send.php" method="post" class="container-fluid modal-form" id="tariffModalForm">
                 
                 <div class="row mb-4">
                     <div class="col-12">
                         <label for="modalTariff" class="pb-3 w-100">Тариф:</label>
                     </div>
                     <div class="col-12 mb-4">
-                        <input type="text" class="modal-tariff w-100" id="modalTariff"  placeholder="Тариф">
+                        <input type="text" class="modal-tariff w-100" id="modalTariff" name="tariffName" placeholder="Тариф">
                     </div>
                     <div class="col-12 mb-4">
-                        <input type="text" class="name w-100 ps-lg-2" id="modalClientName" placeholder="Ваше имя">
+                        <input type="text" class="name w-100 ps-lg-2" id="modalClientName" name="tariffClientName" placeholder="Ваше имя">
                     </div>
                     <div class="col-12">
-                        <input type="text" class="phone w-100" id="modalClientPhone" placeholder="+7 (999) 999 99 99">
+                        <input type="text" class="phone w-100" id="modalClientPhone" name="tarrifClientPhone" placeholder="+7 (999) 999 99 99">
                     </div>
                 </div>
-                
                 <div class="radio-wrap align-items-center mt-2 mb-4 pt-3 pb-2">
                     <div class="row">
                         <div class="col-12 mb-3">
@@ -1733,14 +1741,14 @@
                         </div>
                         <div class="col-12 d-flex justify-content-between radio-label-wrap mt-4 mt-xl-0">
                             <div class="form-radio-btn ps-3 ps-md-1 ps-xl-0 ms-1 ms-md-3 ms-xl-0 pb-xl-1">
-                                <input id="radio-modal-1" type="radio" name="radio" value="1" checked>
+                                <input id="radio-modal-1" type="radio" name="radio" value="telegram" checked>
                                 <label for="radio-modal-1" class="justify-content-start">
                                     Telegram
                                     <img src="img/telegram-green.svg" class="ms-2" alt="telegram">
                                 </label>
                             </div>
                             <div class="form-radio-btn pe-3 pe-md-1 pe-xl-0 me-1 me-md-3 me-xl-0 pb-xl-1">
-                                <input id="radio-modal-2" type="radio" name="radio" value="2">
+                                <input id="radio-modal-2" type="radio" name="radio" value="whatsapp">
                                 <label for="radio-modal-2" class="justify-content-end">
                                     WhatsApp
                                     <img src="img/whatsapp-green.svg" class="ms-2" alt="whatsapp">
@@ -1749,8 +1757,8 @@
                         </div>
                     </div>
                 </div>
-                <div class="budget-btn-wrap">   
-                    <a href="#" class="budget-btn default-btn w-100 px-5">Отправить заявку</a>
+                <div class="budget-btn-wrap">
+                    <button class="budget-btn default-btn w-100 px-5">Отправить заявку</button>
                 </div>
                 <div class="processing-consent mt-4">
                     <p class="mb-0 sz-xs">
@@ -1792,6 +1800,7 @@
     <!-- СКРИПТ ДЛЯ КАСТОМНОГО СЕЛЕКТА -->
     <!-- <script src="js/customSelectScript.js"></script> -->
     <!-- /СКРИПТ ДЛЯ КАСТОМНОГО СЕЛЕКТА -->
+
 
 </body>
 </html>
