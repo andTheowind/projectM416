@@ -135,8 +135,6 @@ input:focus-visible {
     background-color: rgba(0, 0, 0, 0.1);
 }
 
-
-
 .default-btn {
     display: inline-block;
     text-align: center;
@@ -267,7 +265,6 @@ input:focus-visible {
     fill: #B8FF20;
     height: 1em;
     width: 1em;
-
 }
 
 .splide__arrow:disabled svg {
@@ -705,7 +702,6 @@ input:focus-visible {
 
 }
 
-
 .know-problems {
     background-color: rgb(10, 10, 10);
     overflow-x: hidden;
@@ -788,7 +784,6 @@ input:focus-visible {
 }
 
 .know-problems-img-col.aos-init.aos-animate:before {
-    /* left: -350%; */
     clip-path: polygon(100% 0, 0 0, 0 100%, 100% 100%);
 }
 .know-problems-img-col.aos-init.aos-animate:after {
@@ -870,7 +865,6 @@ input:focus-visible {
     background-size: contain;
     background-repeat: no-repeat;
     background-position: 50% 50%;
-    
 }
 
 .know-problems-img::before {
@@ -1678,7 +1672,6 @@ input:focus-visible {
 .form-radio-btn input[type="radio"]:not(:checked) + label img {
     filter: grayscale(100%);
 }
-  
   /* Checked */
 .form-radio-btn input[type="radio"]:checked + label {
     color: #b8ff20;
@@ -2545,6 +2538,11 @@ input:focus-visible {
 
 @media (max-width: 360px) {
 
+    h1 .nowrap-sm,
+    h2 .nowrap-sm,
+    h3 .nowrap-sm {
+        white-space: normal !important;
+    }
     .header-logo {
         font-size: 22px;
     }
@@ -2560,6 +2558,12 @@ input:focus-visible {
     .radio-label-wrap .form-radio-btn:nth-child(2) {
         padding-right: 3px !important;
     }
+    .tariff-wrap .tariff-wrap-list li:last-child a {
+        min-width: 230px;
+    }
+    .any-questions .soc-networks .soc-icons {
+        gap: 26px;
+    }
 
 }
 
@@ -2570,6 +2574,9 @@ input:focus-visible {
     }
     .performance-budget-info p {
         font-size: 10px;
+    }
+    .tariff-wrap .tariff-wrap-list li:last-child a {
+        min-width: 220px;
     }
 
 }
