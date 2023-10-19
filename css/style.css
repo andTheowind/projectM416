@@ -2514,7 +2514,8 @@ input:focus-visible {
         transform: scale(1.185, 1.17);
     }
     #splideInterviews .total-profit b,
-    #splideInterviews .total-profit .green-profit {
+    #splideInterviews .total-profit .green-profit,
+    #tariffModalForm .budget-btn.default-btn {
         font-size: 15px;
     }
 }
@@ -2572,6 +2573,10 @@ input:focus-visible {
     .tariff-wrap-list li {
         padding: 20px 18px;
     }
+    #tariffModal span.nowrap,
+    #tariffModal a {
+        white-space: normal;
+    }
 
 }
 
@@ -2586,6 +2591,13 @@ input:focus-visible {
     }
     .tariff-wrap .tariff-wrap-list li:last-child a {
         min-width: 220px;
+    }
+    #tariffModalForm .budget-btn.default-btn {
+        font-size: 14px;
+    }
+    #tariffModal .modal-content {
+        width: 96%;
+        padding: 12px 4px 18px 4px;
     }
 
 }
