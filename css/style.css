@@ -2686,6 +2686,10 @@ input:focus-visible {
 
 @media (min-width: 576px) and (max-width: 767.98px) {
 
+    .header-menu > div,
+    .header-menu > ul {
+        max-width: 540px;
+    }
     .top-section::before {
         background-size: cover;
         right: 3%;
@@ -2711,19 +2715,21 @@ input:focus-visible {
 @media (min-width: 576px) and (max-width: 991.98px) {
 
     .header-menu > div,
-    .header-menu > ul {
-        max-width: 540px;
-        margin-left: auto;
-        margin-right: auto;
-    }
+    .header-menu > ul,
     .header-menu .top-menu {
         margin-left: auto;
         margin-right: auto;
     }
+
 }
 
 
 @media (min-width: 768px) and (max-width: 991.98px) {
+
+    .header-menu > div,
+    .header-menu > ul {
+        max-width: 720px;
+    }
     .about-me {
         padding-bottom: 60px;
     }
