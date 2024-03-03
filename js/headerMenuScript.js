@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         headerMenu.classList.remove('mobile_menu_active');
         headerBurger.classList.remove('active');
+        htmlMainElement.style.overflow = 'visible';
 
         // После завершения анимации
         setTimeout(function() {
@@ -37,6 +38,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
             headerMenu.classList.remove('mobile_menu_active');
             htmlMainElement.style.overflow = 'visible';
+
             setTimeout(function() {
                 header.classList.remove('header-full-height')
             }, 500);
