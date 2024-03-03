@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         headerMenu.classList.remove('mobile_menu_active');
         headerBurger.classList.remove('active');
-        htmlMainElement.style.overflow = 'visible';
+        htmlMainElement.style.overflowY = 'visible';
 
         // После завершения анимации
         setTimeout(function() {
@@ -32,12 +32,12 @@ document.addEventListener('DOMContentLoaded', function() {
     headerBurger.addEventListener('click', function() {
         
         headerBurger.classList.toggle('active');
-        htmlMainElement.style.overflow = 'hidden';
+        htmlMainElement.style.overflowY = 'hidden';
         
         if (headerMenu.classList.contains('mobile_menu_active')) {
 
             headerMenu.classList.remove('mobile_menu_active');
-            htmlMainElement.style.overflow = 'visible';
+            htmlMainElement.style.overflowY = 'visible';
 
             setTimeout(function() {
                 header.classList.remove('header-full-height')
