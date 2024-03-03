@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
+    var htmlMainElement = document.querySelector('html');
     var header = document.querySelector('.header');
     var headerMenu = document.querySelector('.header-menu');
     var headerBurger = document.querySelector('.header-burger');
@@ -10,7 +11,6 @@ document.addEventListener('DOMContentLoaded', function() {
     function closeMenuAndNavigate(anchor) {
 
         headerMenu.classList.remove('mobile_menu_active');
-
         headerBurger.classList.remove('active');
 
         // После завершения анимации
@@ -29,11 +29,14 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     headerBurger.addEventListener('click', function() {
+        
         headerBurger.classList.toggle('active');
+        htmlMainElement.style.overflow = 'hidden';
         
         if (headerMenu.classList.contains('mobile_menu_active')) {
 
             headerMenu.classList.remove('mobile_menu_active');
+            htmlMainElement.style.overflow = 'visible';
             setTimeout(function() {
                 header.classList.remove('header-full-height')
             }, 500);
@@ -53,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 // Плавное появление логотипа
                 setTimeout(function() {
                     headerLogoCol.style.opacity = '1';
-                }, 450); // Небольшая задержка для плавного эффекта
+                }, 550); // Небольшая задержка для плавного эффекта
             } else {
                 // Скрыть логотип и вернуть z-index к изначальному значению
                 setTimeout(function() {
